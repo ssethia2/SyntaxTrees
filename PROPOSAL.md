@@ -22,4 +22,4 @@ I will use the [FreeLing](http://nlp.lsi.upc.edu/freeling/node/1) library that c
 
 ### Background
 
-I am taking **LING 301: Elements of Syntax** this semester at the University of Illinois at Urbana-Champiagn. I have been taught how to draw *syntax trees* using the **X-Bar Theory** in that class. I will apply this knowledge to complete this project.
+I am taking [**LING 301: Elements of Syntax**](https://courses.illinois.edu/schedule/2018/spring/LING/301) this semester at the [University of Illinois at Urbana-Champiagn](http://illinois.edu/). I have been taught how to draw *syntax trees* using the **X-Bar Theory** in that class. I will apply this knowledge to complete this project.
