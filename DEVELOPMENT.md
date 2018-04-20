@@ -5,5 +5,5 @@
 + Don't need to modify source code. Deleted folder, uninstalled CMake 3.11.
 + Restarted by downloading binary package.
 + Downloaded pre-compiled binary package and uncompressed to project folder.
-+ Made CMakeLists.txt
++ Created project to test library
 + Started testing library.
