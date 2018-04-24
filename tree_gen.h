@@ -9,24 +9,23 @@
 using std::vector;
 using std::string;
 
-class BinaryTree {
+struct Node {
+	string label;
+	Node *left;
+	Node *right;
+	Node *parent;
 
-	struct Node {
-		string label;
-		Node *left;
-		Node *right;
-		Node *parent;
-
-		Node(string lab = NULL, Node *new_left = nullptr, Node *new_right = nullptr, Node *new_parent = nullptr) {
-			label = lab;
-			left = new_left;
-			right = new_right;
-			parent = new_parent;
-		}
+	Node(string lab = NULL, Node *new_left = nullptr, Node *new_right = nullptr, Node *new_parent = nullptr) {
+		label = lab;
+		left = new_left;
+		right = new_right;
+		parent = new_parent;
 	}
+}
 
+class BinaryTree {
 private:
-	Node *root_;
+	Node * root_;
 
 public:
 	BinaryTree();
