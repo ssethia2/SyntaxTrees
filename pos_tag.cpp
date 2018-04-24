@@ -1,4 +1,4 @@
-#include <freeling.h>
+#include "freeling.h"
 #include <iostream>
 
 freeling::maco_options my_maco_options(const wstring &lang, const wstring &path) {
