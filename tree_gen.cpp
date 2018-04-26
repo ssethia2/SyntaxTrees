@@ -5,37 +5,54 @@ using std::string;
 using std::cout;
 
 namespace BinaryTree {
+	/**
+	* Default constructor
+	*/
 	BinaryTree::BinaryTree() {
 		root_ = nullptr;
 	}
 
-	void BinaryTree::create_tree(vector<string> tags) {
+	/**
+	* Make the tree from the vector of part-of-speech tags
+	*
+	*@param tags the vector that contains the tags
+	*/
+	BinaryTree::BinaryTree(vector<string> tags) {
 		if (tags.size() == 0) {
 			return;
 		}
 
 		//Check for D's before N's
 
-
+		//Vector to store the phrase subtrees
 		vector<struct Node*> phrases;
 
+		//Storing the phrase subtrees returned by create_phrase()
 		for (auto tag : tags) {
 			phrases.push_back(create_phrase(tag));
 		}
 
-		for (auto x : phrases) {
-			cout << x->label;
-		}
+		//Initialize the root of the tree
+		root_ = phrases.front();
 
 		build_tree(phrases);
 	}
 
-	void BinaryTree::build_tree(vector<struct Node*>& phrases) {
-		root_ = phrases.front();
+	/**
+	* Destructor
+	*/
+	BinaryTree::~BinaryTree()
+	{
+		clear(this->root_);
+	}
 
-		int i = 1, j = 0;
+	/**
+	* Combine the subtrees into a single binary tree
+	*/
+	void BinaryTree::build_tree(vector<struct Node*> phrases) {
+		int i = 0, j = 0;
 
-		for (i = 1; i < phrases.size(); i++) {
+		for (i = 0; i < phrases.size(); i++) {
 			j = i;
 
 			if (phrases.at(i)->label == "DP") {
@@ -88,11 +105,43 @@ namespace BinaryTree {
 		}
 	}
 
-	Node *BinaryTree::create_phrase(string tag) {
+	/**
+	* Default constructor
+	*/
+	Node* create_phrase(string tag) {
 		Node *head = new Node(tag);
 		Node *bar = new Node(tag + "'", head);
 		Node *phrase = new Node(tag + "P", bar);
 
 		return phrase;
+	}
+
+	/**
+	* Clear the tree
+	*/
+	void clear(Node *to_clear) {
+		if (to_clear->left) {
+			clear(to_clear->left);
+		}
+		if (to_clear->right) {
+			clear(to_clear->right);
+		}
+
+		delete to_clear;
+		to_clear = nullptr;
+	}
+
+	int BinaryTree::count() {
+		return count(this->root_);
+	}
+
+	int BinaryTree::count(Node *current) {
+		if (current->left) {
+			count(current->left);
+		}
+		if (current->right) {
+			count(current->right);
+		}
+		return 1;
 	}
 }

@@ -19,19 +19,23 @@ namespace BinaryTree {
 			label = lab;
 			left = new_left;
 			right = new_right;
-			parent = new_parent;
 		}
 	};
 
 	class BinaryTree {
 	private:
-		Node * root_;
+		Node *root_;
 
 	public:
 		BinaryTree();
-		void create_tree(vector<string> tags);
-		void build_tree(vector<struct Node*>& phrases);
+		BinaryTree(vector<string> tags);
+		~BinaryTree();
+
+		void build_tree(vector<struct Node*> phrases);
 		struct Node* create_phrase(string tag);
+		void clear(Node * to_clear);
+		int count();
+		int count(Node *current);
 	};
 }
 
