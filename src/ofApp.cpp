@@ -26,7 +26,7 @@ void ofApp::draw() {
 	if (current_state_ == DRAW_TREE) {
 		/*std::vector<string> tags = {"D", "N", "V", "D", "N", "P", "D", "N"};
 		BinaryTree::BinaryTree syntax_tree = BinaryTree::BinaryTree(tags);*/
-		int x = pow(2.0, 5.0) - 1;
+		int x = pow(2.0, 4.0) - 1;
 		for (int i = 0; i < log2(x); i++) {
 			for (int j = 1; j <= pow(2.0, i); j++) {
 				ofDrawCircle(j * ofGetWidth() / (pow(2.0, i + 1) + 2.0), (i + 2)*ofGetHeight() / x, 200 / x);
@@ -34,7 +34,7 @@ void ofApp::draw() {
 		}
 
 		ofDrawBitmapString("Press R to reset.", 500, 500);
-		//current_state_ = RESET;
+		//6current_state_ = RESET;
 	}
 }
 
