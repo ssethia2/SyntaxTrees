@@ -2,14 +2,26 @@
 
 #include "ofMain.h"
 
-class ofApp : public ofBaseApp{
+using std::string;
 
-	public:
-		void setup();
-		void update();
-		void draw();
+enum ProjectState {
+	TAKE_INPUT,
+	DRAW_TREE,
+	RESET
+};
 
-		void windowResized(int w, int h);
-		void gotMessage(ofMessage msg);
-		
+class ofApp : public ofBaseApp {
+
+public:
+	ProjectState current_state_ = TAKE_INPUT;
+	string syntax_;
+	ofTrueTypeFont font_;
+
+	void setup();
+	void update();
+	void draw();
+
+	void keyPressed(int key);
+
+	void reset();
 };

@@ -1,32 +1,63 @@
 #include "ofApp.h"
+#include "math.h"
 #include "../tree_gen.h"
+
+using std::string;
+using std::vector;
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+	syntax_ = "";
+	/*font.load("arial.ttf", 32);*/
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-
+	
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	std::vector<string> tags = {"D", "N", "V", "D", "N", "P", "D", "N"};
-	BinaryTree::BinaryTree syntax_tree = BinaryTree::BinaryTree(tags);
-	int x = syntax_tree.count();
-	for (int i = 1; i <= x; i++) {
-		ofDrawCircle(ofGetWidth() / 2, i*ofGetHeight() / x - 350 / x, 200 / x);
+	if (current_state_ == TAKE_INPUT) {
+		ofDrawBitmapString("Enter your input below. Press return to draw tree.", 500, 500);
+		ofDrawBitmapString(syntax_, 500, 520);
+	}
+
+	if (current_state_ == DRAW_TREE) {
+		/*std::vector<string> tags = {"D", "N", "V", "D", "N", "P", "D", "N"};
+		BinaryTree::BinaryTree syntax_tree = BinaryTree::BinaryTree(tags);*/
+		int x = pow(2.0, 5.0) - 1;
+		for (int i = 0; i < log2(x); i++) {
+			for (int j = 1; j <= pow(2.0, i); j++) {
+				ofDrawCircle(j * ofGetWidth() / (pow(2.0, i + 1) + 2.0), (i + 2)*ofGetHeight() / x, 200 / x);
+			}
+		}
+
+		ofDrawBitmapString("Press R to reset.", 500, 500);
+		//current_state_ = RESET;
 	}
 }
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h) {
-
+void ofApp::reset() {
+	current_state_ = TAKE_INPUT;
 }
 
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg) {
-
+void ofApp::keyPressed(int key) {
+	if (current_state_ == TAKE_INPUT) {
+		if (key == OF_KEY_BACKSPACE && syntax_.size() > 0) { // backspace
+			syntax_ = syntax_.substr(0, syntax_.size() - 1); // delete one character
+		}
+		else if (key == OF_KEY_RETURN) {
+			current_state_ = DRAW_TREE;
+		}
+		else {
+			syntax_.append(1, (char)key);
+		}
+	}
+	/*else if (current_state_ == RESET) {
+		if (toupper(key) == 'R'){
+			reset();
+		}
+	}*/
 }
