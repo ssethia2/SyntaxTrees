@@ -1,6 +1,6 @@
 #include "ofApp.h"
 #include "math.h"
-#include "../tree_gen.h"
+
 
 using std::string;
 using std::vector;
@@ -8,12 +8,11 @@ using std::vector;
 //--------------------------------------------------------------
 void ofApp::setup() {
 	syntax_ = "";
-	/*font.load("arial.ttf", 32);*/
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-	
+
 }
 
 //--------------------------------------------------------------
@@ -26,7 +25,7 @@ void ofApp::draw() {
 	if (current_state_ == DRAW_TREE) {
 		/*std::vector<string> tags = {"D", "N", "V", "D", "N", "P", "D", "N"};
 		BinaryTree::BinaryTree syntax_tree = BinaryTree::BinaryTree(tags);*/
-		int x = pow(2.0, 4.0) - 1;
+		int x = pow(2.0, 6.0) - 1;
 		for (int i = 0; i < log2(x); i++) {
 			for (int j = 1; j <= pow(2.0, i); j++) {
 				ofDrawCircle(j * ofGetWidth() / (pow(2.0, i + 1) + 2.0), (i + 2)*ofGetHeight() / x, 200 / x);
@@ -34,12 +33,12 @@ void ofApp::draw() {
 		}
 
 		ofDrawBitmapString("Press R to reset.", 500, 500);
-		//6current_state_ = RESET;
 	}
 }
 
 //--------------------------------------------------------------
 void ofApp::reset() {
+	syntax_ = "";
 	current_state_ = TAKE_INPUT;
 }
 
@@ -55,9 +54,9 @@ void ofApp::keyPressed(int key) {
 			syntax_.append(1, (char)key);
 		}
 	}
-	/*else if (current_state_ == RESET) {
-		if (toupper(key) == 'R'){
+	if (current_state_ == DRAW_TREE) {
+		if (toupper(key) == 'R') {
 			reset();
 		}
-	}*/
+	}
 }
