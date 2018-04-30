@@ -23,18 +23,38 @@ namespace BinaryTree {
 	};
 
 	class BinaryTree {
+
 	public:
-		Node * root_;
+		Node * root_; //Root of the tree
 
-		BinaryTree();
-		BinaryTree(vector<string> tags);
-		~BinaryTree();
+		//--------------------------------------------------------------------------------------------------------------------
 
-		void build_tree(vector<Node*> phrases);
-		struct Node* create_phrase(string tag);
-		void clear(Node * to_clear);
-		int count();
-		int count(Node *current);
+		BinaryTree(); //Default constructor
+		BinaryTree(vector<string> tags); //Vector-value constructor
+		~BinaryTree(); //Destructor
+
+		//--------------------------------------------------------------------------------------------------------------------
+
+		Node* CreatePhrase(string tag); //Create phrase for tag
+
+		void CreateTree(vector<string> tags); //Create tree
+		void BuildTree(vector<Node*> &phrases); //Combine subtrees
+
+
+		//--------------------------------------------------------------------------------------------------------------------
+
+		void DPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter); //Build DP subtree
+		void NPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter); //Build NP subtree
+		void VPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter); //Build VP subtree
+		void PPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter); //Build PP subtree 
+		void AdjPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter); //Build AdjP subtree
+		void CPhrase(vector<Node*> &phrases); //Build CP subtree
+
+		//--------------------------------------------------------------------------------------------------------------------
+
+		void clear(Node * to_clear); //Clear the tree
+		int count(); //Count nodes in tree
+		int count(Node *current); //Count nodes in subtree with root current
 	};
 }
 
