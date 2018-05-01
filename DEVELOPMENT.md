@@ -20,3 +20,7 @@
 + Fixed small bug with building the tree.
 + Added comments.
 + Exploring the MeTA toolkit for pos tagging.
++ Tested DPs and NPs. 
++ MeTA working on system. 
++ MeTA project generated on MSVC 2017, 51 build errors. 
++ Need to figure way to integrate it with project.
