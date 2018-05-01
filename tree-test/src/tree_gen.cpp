@@ -93,7 +93,7 @@ namespace BinaryTree {
 				AdjPhrase(phrases, prime_iter, prime_iter);
 			}
 			else if (phrases.at(prime_iter)->label == "PP") {
-				PPhrase(phrases, prime_iter);
+				PPhrase(phrases, prime_iter, prime_iter);
 			}
 		}
 
@@ -121,13 +121,21 @@ namespace BinaryTree {
 	* @param phrases vector that contains the phrases that haven't been included in a subtree yet
 	*/
 	void BinaryTree::NPhrase(vector<Node*>& phrases, int prime_iter, int sec_iter) {
+		//Check for PP immediately following NP starting with 'of' to add to complement
+		/*if (phrases.at(prime_iter + 1)->label == "PP") {
+			if (syntax.at(prime_iter + 1) == 'of'){
+				phrases.at(prime_iter)->left->right = phrases.at(sec_iter); //Take the 'of' PP as a complement - sister to head
+			}
+			
+		}*/
+
 		while (phrases.at(sec_iter)->label != "DP") { //Iterate to the previous DP
 			sec_iter--;
 		}
 		sec_iter++; //Go to the phrase after the DP
 
 		//Go until the next VP or till the end of the sentence
-		while (phrases.at(sec_iter)->label != "VP" || sec_iter < phrases.size()) {
+		while (sec_iter < phrases.size() && phrases.at(sec_iter)->label != "VP") {
 			//If these phrases are PPs or AdjPs and this NP has at least one adjunct
 			if (phrases.at(sec_iter)->label == "PP" || phrases.at(sec_iter)->label == "AdjP") {
 				//Create a new bar level
@@ -171,7 +179,7 @@ namespace BinaryTree {
 	* @param phrases vector that contains the phrases that haven't been included in a subtree yet
 	*/
 	void BinaryTree::PPhrase(vector<Node*>& phrases, int prime_iter, int sec_iter) {
-		while ((phrases.at(++sec_iter)->label != "PP" || phrases.at(++sec_iter)->label != "VP") && sec_iter < phrases.size()) {
+		while (sec_iter < phrases.size() && (phrases.at(++sec_iter)->label != "PP" || phrases.at(++sec_iter)->label != "VP")) {
 			if (phrases.at(sec_iter)->label == "DP" || phrases.at(sec_iter)->label == "NP") {
 				Node *new_bar = new Node("P'", phrases.at(prime_iter)->left, phrases.at(sec_iter));
 				phrases.at(prime_iter)->left = new_bar;
@@ -206,7 +214,7 @@ namespace BinaryTree {
 	void BinaryTree::CPhrase(vector<Node*>& phrases) {
 		for (auto phrase : phrases) {
 			if (phrase->label == "VP") {
-				root_ = new Node("S", phrases.at(0), phrase));
+				root_ = new Node("S", phrases.at(0), phrase);
 				break;
 			}
 		}

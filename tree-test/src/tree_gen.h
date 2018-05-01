@@ -15,7 +15,7 @@ namespace BinaryTree {
 		Node *left;
 		Node *right;
 
-		Node(string lab = NULL, Node *new_left = nullptr, Node *new_right = nullptr, Node *new_parent = nullptr) {
+		Node(string lab = NULL, Node *new_left = nullptr, Node *new_right = nullptr) {
 			label = lab;
 			left = new_left;
 			right = new_right;
