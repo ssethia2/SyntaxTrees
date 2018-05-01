@@ -19,3 +19,4 @@
 + Linking tree generator to library and openFrameworks to tree generator left.
 + Fixed small bug with building the tree.
 + Added comments.
++ Exploring the MeTA toolkit for pos tagging.
