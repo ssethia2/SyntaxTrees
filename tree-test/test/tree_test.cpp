@@ -348,4 +348,12 @@ namespace BinaryTree {
 
 		REQUIRE(one_phrase.count() == 17);
 	}
+
+	TEST_CASE("Clear tree") {
+		vector<string> tags = { "D", "N", "V", "D", "N" };
+		BinaryTree one_phrase = BinaryTree::BinaryTree(tags);
+
+		one_phrase.clear();
+		REQUIRE(one_phrase.count() == 0);
+	}
 }

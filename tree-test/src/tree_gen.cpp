@@ -3,8 +3,6 @@
 
 using std::vector;
 using std::string;
-using std::cout;
-using std::ostream;
 
 namespace BinaryTree {
 	/**
@@ -18,7 +16,7 @@ namespace BinaryTree {
 	* Vector value constructor
 	* Make the tree from the vector of part-of-speech tags
 	*
-	*@param tags the vector that contains the tags
+	* @param tags the vector that contains the tags
 	*/
 	BinaryTree::BinaryTree(vector<string> tags) {
 		root_ = nullptr;
@@ -262,7 +260,17 @@ namespace BinaryTree {
 	//--------------------------------------------------------------------------------------------------------------------
 
 	/**
-	* Clear the tree
+	* Clear the subtree with root at to_clear.
+	*/
+	void BinaryTree::clear() {
+		clear(root_);
+		root_ = nullptr;
+	}
+
+	/**
+	* Clear the subtree with root at to_clear.
+	* 
+	* @param to_clear pointer to the root of the subtree to be cleared.
 	*/
 	void BinaryTree::clear(Node *to_clear) {
 		if (!to_clear) {
