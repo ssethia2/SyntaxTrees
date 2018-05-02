@@ -341,4 +341,11 @@ namespace BinaryTree {
 	REQUIRE(one_phrase.root_->right->label == "VP");
 	REQUIRE(one_phrase.root_->right->left->right->label == "DP");
 	}
+
+	TEST_CASE("Count nodes in tree") {
+		vector<string> tags = { "D", "N", "V", "D", "N" };
+		BinaryTree one_phrase = BinaryTree::BinaryTree(tags);
+
+		REQUIRE(one_phrase.count() == 17);
+	}
 }

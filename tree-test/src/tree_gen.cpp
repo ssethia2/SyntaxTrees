@@ -4,6 +4,7 @@
 using std::vector;
 using std::string;
 using std::cout;
+using std::ostream;
 
 namespace BinaryTree {
 	/**
@@ -126,7 +127,7 @@ namespace BinaryTree {
 			if (syntax.at(prime_iter + 1) == 'of'){
 				phrases.at(prime_iter)->left->right = phrases.at(sec_iter); //Take the 'of' PP as a complement - sister to head
 			}
-			
+
 		}*/
 
 		bool is_after_vp = true;
@@ -182,7 +183,7 @@ namespace BinaryTree {
 		sec_iter = prime_iter;*/
 
 		bool is_dp_added = false;
-		
+
 		while (++sec_iter < phrases.size()) { //Add all phrases following V 
 			if ((!is_dp_added && phrases.at(sec_iter)->label == "DP") || phrases.at(sec_iter)->label == "AdvP" || phrases.at(sec_iter)->label == "PP") {
 				//Check for direct objects if possible
@@ -197,7 +198,7 @@ namespace BinaryTree {
 		}
 
 		//Check for an adverb preceding the verb and add it as the top most adjunct
-		if (phrases.at(prime_iter - 1)->label == "AdvP") { 
+		if (phrases.at(prime_iter - 1)->label == "AdvP") {
 			Node *new_bar = new Node("V'", phrases.at(sec_iter), phrases.at(prime_iter)->left);
 			phrases.at(prime_iter)->left = new_bar;
 		}
@@ -251,7 +252,7 @@ namespace BinaryTree {
 		}
 
 		for (auto phrase : phrases) {
-			if (phrase->label == "VP") { 
+			if (phrase->label == "VP") {
 				root_->right = phrase; //Put the predicate in the right subtree if there is one
 				break;
 			}
@@ -294,12 +295,6 @@ namespace BinaryTree {
 		if (!current) {
 			return 0;
 		}
-		if (current->left) {
-			count(current->left);
-		}
-		if (current->right) {
-			count(current->right);
-		}
-		return 1;
+		return 1 + count(current->left) + count(current->right);
 	}
 }
