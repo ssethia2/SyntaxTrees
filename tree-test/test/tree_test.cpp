@@ -92,6 +92,7 @@ namespace BinaryTree {
 		test_phrases.push_back(empty.CreatePhrase("D"));
 		test_phrases.push_back(empty.CreatePhrase("N"));
 		test_phrases.push_back(empty.CreatePhrase("P"));
+		test_phrases.push_back(empty.CreatePhrase("V"));
 
 		empty.NPhrase(test_phrases, 1, 1);
 		REQUIRE(test_phrases.at(2)->label == "PP");
@@ -101,7 +102,7 @@ namespace BinaryTree {
 
 	TEST_CASE("NPhrase with preceding and following adjuncts test") {
 		BinaryTree empty = BinaryTree::BinaryTree();
-		vector<string> tags = { "D", "Adj", "N", "P"};
+		vector<string> tags = { "D", "Adj", "N", "P", "V"};
 		vector<Node*> test_phrases = {};
 
 		for (auto tag : tags) {
@@ -155,5 +156,81 @@ namespace BinaryTree {
 		REQUIRE(test_phrases.at(3)->left->left->left->right->left->label == "AdjP");
 		REQUIRE(test_phrases.at(3)->left->left->left->right->right->label == "N'");
 		REQUIRE(test_phrases.at(3)->left->left->left->right->right->left->label == "N");
+	}
+
+	TEST_CASE("VPhrase with one following D adjuncts") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D"};
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.VPhrase(test_phrases, 2, 2);
+		REQUIRE(test_phrases.at(2)->label == "VP");
+		REQUIRE(test_phrases.at(2)->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->right->label == "DP");
+		REQUIRE(test_phrases.at(2)->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->left->label == "V");
+	}
+
+	TEST_CASE("VPhrase with multiple following adjuncts") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D", "N", "P"};
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.VPhrase(test_phrases, 2, 2);
+		REQUIRE(test_phrases.at(2)->label == "VP");
+		REQUIRE(test_phrases.at(2)->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->right->label == "PP");
+		REQUIRE(test_phrases.at(2)->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->right->label == "DP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->label == "V");
+	}
+
+	TEST_CASE("VPhrase with phrases following P which shouldn't be added") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D", "N", "P", "D", "D"};
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.VPhrase(test_phrases, 2, 2);
+		REQUIRE(test_phrases.at(2)->label == "VP");
+		REQUIRE(test_phrases.at(2)->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->right->label == "PP");
+		REQUIRE(test_phrases.at(2)->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->right->label == "DP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->label == "V");
+	}
+
+	TEST_CASE("VPhrase with multiple following P and D phrases") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D", "N", "P", "D", "D", "P", "D"};
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.VPhrase(test_phrases, 2, 2);
+		REQUIRE(test_phrases.at(2)->label == "VP");
+		REQUIRE(test_phrases.at(2)->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->right->label == "PP");
+		REQUIRE(test_phrases.at(2)->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->right->label == "PP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->left->right->label == "DP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->left->label == "V");
 	}
 }

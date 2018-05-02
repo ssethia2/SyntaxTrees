@@ -129,6 +129,15 @@ namespace BinaryTree {
 			
 		}*/
 
+		bool is_after_vp = true;
+		while (sec_iter < phrases.size()) {
+			if (phrases.at(sec_iter++)->label == "VP") {
+				is_after_vp = false;
+				break;
+			}
+		}
+		sec_iter = prime_iter;
+
 		while (phrases.at(sec_iter)->label != "DP") { //Iterate to the previous DP
 			sec_iter--;
 		}
@@ -137,7 +146,7 @@ namespace BinaryTree {
 		//Go until the next VP or till the end of the sentence
 		while (sec_iter < phrases.size() && phrases.at(sec_iter)->label != "VP") {
 			//If these phrases are PPs or AdjPs and this NP has at least one adjunct
-			if ((sec_iter > prime_iter && phrases.at(sec_iter)->label == "PP") || phrases.at(sec_iter)->label == "AdjP") {
+			if ((sec_iter > prime_iter && !is_after_vp && phrases.at(sec_iter)->label == "PP") || phrases.at(sec_iter)->label == "AdjP") {
 				//Create a new bar level
 				Node *new_bar;
 
@@ -163,12 +172,33 @@ namespace BinaryTree {
 	* @param phrases vector that contains the phrases that haven't been included in a subtree yet
 	*/
 	void BinaryTree::VPhrase(vector<Node*>& phrases, int prime_iter, int sec_iter) {
-		if (phrases.at(prime_iter - 1)->label == "AdvP") { //Check for an adverb preceding the verb
-			Node *new_bar = new Node("V'", phrases.at(sec_iter), phrases.at(prime_iter)->left);
-			phrases.at(prime_iter)->left = new_bar;
+		/*bool is_dp_after_vp = false;
+		while (sec_iter < phrases.size()) {
+			if (phrases.at(sec_iter++)->label == "DP") {
+				is_dp_after_vp = true;
+				break;
+			}
 		}
+		sec_iter = prime_iter;*/
+
+		bool is_dp_added = false;
+		
 		while (++sec_iter < phrases.size()) { //Add all phrases following V 
-			Node *new_bar = new Node("V'", phrases.at(prime_iter)->left, phrases.at(sec_iter));
+			if ((!is_dp_added && phrases.at(sec_iter)->label == "DP") || phrases.at(sec_iter)->label == "AdvP" || phrases.at(sec_iter)->label == "PP") {
+				//Check for direct objects if possible
+
+				Node *new_bar = new Node("V'", phrases.at(prime_iter)->left, phrases.at(sec_iter));
+				phrases.at(prime_iter)->left = new_bar;
+
+				if (phrases.at(sec_iter)->label == "DP") {
+					is_dp_added = true;
+				}
+			}
+		}
+
+		//Check for an adverb preceding the verb and add it as the top most adjunct
+		if (phrases.at(prime_iter - 1)->label == "AdvP") { 
+			Node *new_bar = new Node("V'", phrases.at(sec_iter), phrases.at(prime_iter)->left);
 			phrases.at(prime_iter)->left = new_bar;
 		}
 	}
