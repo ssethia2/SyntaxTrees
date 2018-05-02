@@ -271,4 +271,24 @@ namespace BinaryTree {
 		REQUIRE(test_phrases.at(2)->left->right->label == "DP");
 		REQUIRE(test_phrases.at(2)->left->left->left->label == "P");
 	}
+
+	TEST_CASE("AdjPhrase with multiple preceding adjuncts test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "Adv", "Adv", "Adv", "Adj" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.AdjPhrase(test_phrases, 4, 4);
+		REQUIRE(test_phrases.at(4)->label == "AdjP");
+		REQUIRE(test_phrases.at(4)->left->label == "Adj'");
+		REQUIRE(test_phrases.at(4)->left->left->label == "AdvP");
+		REQUIRE(test_phrases.at(4)->left->right->label == "Adj'");
+		REQUIRE(test_phrases.at(4)->left->right->left->label == "AdvP");
+		REQUIRE(test_phrases.at(4)->left->right->right->label == "Adj'");
+		REQUIRE(test_phrases.at(4)->left->right->right->left->label == "AdvP");
+		REQUIRE(test_phrases.at(4)->left->right->right->right->label == "Adj");
+	}
 }

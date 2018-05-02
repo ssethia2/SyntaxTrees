@@ -228,7 +228,7 @@ namespace BinaryTree {
 		while (sec_iter > 0 && phrases.at(sec_iter)->label != "DP") {
 			sec_iter--;
 			if (phrases.at(sec_iter)->label == "AdvP" && phrases.at(prime_iter)->left->right) {
-				Node *new_bar = new Node("Adj'", phrases.at(prime_iter)->left, phrases.at(sec_iter));
+				Node *new_bar = new Node("Adj'", phrases.at(sec_iter), phrases.at(prime_iter)->left);
 				phrases.at(prime_iter)->left = new_bar;
 			}
 			else if (phrases.at(sec_iter)->label == "AdvP") {
@@ -244,9 +244,13 @@ namespace BinaryTree {
 	* @param phrases vector that contains the subject DP and VP
 	*/
 	void BinaryTree::CPhrase(vector<Node*>& phrases) {
+		if (phrases.at(0)->left->label == "DP") {
+			root_ = new Node("S", phrases.at(0)); //Put the subject in the left subtree if there is one
+		}
+
 		for (auto phrase : phrases) {
-			if (phrase->label == "VP") {
-				root_ = new Node("S", phrases.at(0), phrase);
+			if (phrase->label == "VP") { 
+				root_->right = phrase; //Put the predicate in the right subtree if there is one
 				break;
 			}
 		}
