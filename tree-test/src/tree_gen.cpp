@@ -209,10 +209,12 @@ namespace BinaryTree {
 	* @param phrases vector that contains the phrases that haven't been included in a subtree yet
 	*/
 	void BinaryTree::PPhrase(vector<Node*>& phrases, int prime_iter, int sec_iter) {
-		while (sec_iter < phrases.size() && (phrases.at(++sec_iter)->label != "PP" || phrases.at(++sec_iter)->label != "VP")) {
+		while (++sec_iter < phrases.size()) {
+			//Check for the immediately following DP or NP
 			if (phrases.at(sec_iter)->label == "DP" || phrases.at(sec_iter)->label == "NP") {
 				Node *new_bar = new Node("P'", phrases.at(prime_iter)->left, phrases.at(sec_iter));
 				phrases.at(prime_iter)->left = new_bar;
+				break; //PPs take only one adjunct
 			}
 		}
 	}
