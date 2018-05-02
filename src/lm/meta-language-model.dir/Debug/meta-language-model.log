@@ -1,0 +1,437 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/lm/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/lm/CMakeFiles/generate.stamp is up-to-date.
+  language_model.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\language_model.cpp(79): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\language_model.cpp(182): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(99): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(95): note: while compiling class template member function 'meta::util::disk_vector<uint64_t>::~disk_vector(void)'
+  c:\msys64\home\satvik\meta\src\lm\language_model.cpp(224): note: see reference to function template instantiation 'meta::util::disk_vector<uint64_t>::~disk_vector(void)' being compiled
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(1933): note: while compiling class template member function 'void std::vector<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,std::allocator<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>>>::_Umove_if_noexcept1(std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::true_type)'
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(1944): note: see reference to function template instantiation 'void std::vector<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,std::allocator<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>>>::_Umove_if_noexcept1(std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>> *,std::true_type)' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1174): note: see reference to class template instantiation 'std::vector<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,std::allocator<std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>>>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::shared_ptr<cpptoml::base>,
+              _Hasher=std::hash<std::string>,
+              _Keyeq=std::equal_to<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\msys64\home\satvik\meta\deps\cpptoml\include\cpptoml.h(1104): note: see reference to class template instantiation 'std::unordered_map<std::string,std::shared_ptr<cpptoml::base>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::shared_ptr<cpptoml::base>
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<pair_t,meta::lm::language_model::top_k::<lambda_59564ce90b1e16b739fd549d870c746d>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(26): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<pair_t,meta::lm::language_model::top_k::<lambda_59564ce90b1e16b739fd549d870c746d>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(59): note: while compiling class template member function 'std::vector<std::pair<std::string,float>,std::allocator<_Ty>> meta::util::fixed_heap<pair_t,meta::lm::language_model::top_k::<lambda_59564ce90b1e16b739fd549d870c746d>>::extract_top(void)'
+          with
+          [
+              _Ty=std::pair<std::string,float>
+          ]
+  c:\msys64\home\satvik\meta\src\lm\language_model.cpp(110): note: see reference to function template instantiation 'std::vector<std::pair<std::string,float>,std::allocator<_Ty>> meta::util::fixed_heap<pair_t,meta::lm::language_model::top_k::<lambda_59564ce90b1e16b739fd549d870c746d>>::extract_top(void)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,float>
+          ]
+  c:\msys64\home\satvik\meta\src\lm\language_model.cpp(100): note: see reference to class template instantiation 'meta::util::fixed_heap<pair_t,meta::lm::language_model::top_k::<lambda_59564ce90b1e16b739fd549d870c746d>>' being compiled
+  token_list.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\token_list.cpp(48): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\token_list.cpp(53): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+  diff.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(81): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::lm::sentence::size_type', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(100): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(205): note: see reference to function template instantiation 'void meta::lm::diff::lm_ops<PQ>(const meta::lm::sentence &,PQ &,uint64_t)' being compiled
+          with
+          [
+              PQ=meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>
+          ]
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(62): note: see reference to function template instantiation 'void meta::lm::diff::step<meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>>(const meta::lm::sentence &,PQ &,::size_t)' being compiled
+          with
+          [
+              PQ=meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>
+          ]
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(101): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(102): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(107): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::lm::sentence::size_type', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(117): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::lm::sentence::size_type', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(123): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(127): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::lm::sentence::size_type', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(133): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(137): warning C4101: 'ex': unreferenced local variable
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(194): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(210): note: see reference to function template instantiation 'void meta::lm::diff::remove<PQ>(const meta::lm::sentence &,::size_t,PQ &,uint64_t)' being compiled
+          with
+          [
+              PQ=meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>
+          ]
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(155): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(211): note: see reference to function template instantiation 'void meta::lm::diff::insert<PQ>(const meta::lm::sentence &,::size_t,PQ &,uint64_t)' being compiled
+          with
+          [
+              PQ=meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>
+          ]
+c:\msys64\home\satvik\meta\src\lm\diff.cpp(179): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(212): note: see reference to function template instantiation 'void meta::lm::diff::substitute<PQ>(const meta::lm::sentence &,::size_t,PQ &,uint64_t)' being compiled
+          with
+          [
+              PQ=meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(26): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(15): note: while compiling class template member function 'meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::fixed_heap(uint64_t,Comp)'
+          with
+          [
+              Comp=meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.h(103): note: see reference to function template instantiation 'meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::fixed_heap(uint64_t,Comp)' being compiled
+          with
+          [
+              Comp=meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(59): note: while compiling class template member function 'std::vector<std::pair<meta::lm::sentence,double>,std::allocator<_Ty>> meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::extract_top(void)'
+          with
+          [
+              _Ty=std::pair<meta::lm::sentence,double>
+          ]
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(63): note: see reference to function template instantiation 'std::vector<std::pair<meta::lm::sentence,double>,std::allocator<_Ty>> meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>::extract_top(void)' being compiled
+          with
+          [
+              _Ty=std::pair<meta::lm::sentence,double>
+          ]
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(59): note: see reference to class template instantiation 'meta::util::fixed_heap<pair_t,meta::lm::diff::candidates::<lambda_cc5ae0d244c9732c55aca9685852d148>>' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              T=meta::lm::sentence
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              T=meta::lm::sentence
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::lm::sentence,
+              _Hasher=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              _Keyeq=std::equal_to<meta::lm::sentence>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              _Hasher=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              _Keyeq=std::equal_to<meta::lm::sentence>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_set(26): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              _Hasher=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              _Keyeq=std::equal_to<meta::lm::sentence>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Uset_traits<_Kty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              _Hasher=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              _Keyeq=std::equal_to<meta::lm::sentence>,
+              _Alloc=std::allocator<meta::lm::sentence>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_set(70): note: see reference to class template instantiation 'std::_Hash<std::_Uset_traits<_Kty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence,
+              _Hasher=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              _Keyeq=std::equal_to<meta::lm::sentence>,
+              _Alloc=std::allocator<meta::lm::sentence>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\lm\diff.h(192): note: see reference to class template instantiation 'std::unordered_set<meta::lm::sentence,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<_Kty>,std::allocator<_Kty>>' being compiled
+          with
+          [
+              _Kty=meta::lm::sentence
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(99): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(95): note: while compiling class template member function 'meta::util::disk_vector<uint64_t>::~disk_vector(void)'
+  c:\msys64\home\satvik\meta\src\lm\diff.cpp(244): note: see reference to function template instantiation 'meta::util::disk_vector<uint64_t>::~disk_vector(void)' being compiled
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(1104): note: while compiling class template member function 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::_Make_iter(std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>) const'
+          with
+          [
+              _Ty=std::pair<const std::string,std::vector<std::string,std::allocator<std::string>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(368): note: see reference to function template instantiation 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::_Make_iter(std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>) const' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::vector<std::string,std::allocator<std::string>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(169): note: see reference to class template instantiation 'std::list<std::pair<const _Kty,_Ty>,std::allocator<std::pair<const _Kty,_Ty>>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::vector<std::string,std::allocator<std::string>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::vector<std::string,std::allocator<std::string>>,
+              _Hasher=std::hash<std::string>,
+              _Keyeq=std::equal_to<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::vector<std::string,std::allocator<std::string>>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\lm\diff.h(184): note: see reference to class template instantiation 'std::unordered_map<std::string,std::vector<std::string,std::allocator<_Ty>>,std::hash<_Kty>,std::equal_to<_Ty>,std::allocator<std::pair<const _Kty,std::vector<_Ty,std::allocator<_Ty>>>>>' being compiled
+          with
+          [
+              _Ty=std::string,
+              _Kty=std::string
+          ]
+  mph_language_model.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(343): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(345): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(353): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(67): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(85): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(142): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(161): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(177): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(250): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(167): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(154): note: while compiling class template member function 'void meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<_Ty>>,float,uint32_t>::reorder_values(void)'
+          with
+          [
+              _Ty=meta::term_id
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(147): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<_Ty>>,float,uint32_t>::reorder_values(void)' being compiled
+          with
+          [
+              _Ty=meta::term_id
+          ]
+  c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(81): note: see reference to class template instantiation 'meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<_Ty>>,float,uint32_t>' being compiled
+          with
+          [
+              _Ty=meta::term_id
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(207): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(99): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(95): note: while compiling class template member function 'meta::util::disk_vector<int64_t>::~disk_vector(void)'
+  c:\msys64\home\satvik\meta\src\lm\mph_language_model.cpp(372): note: see reference to function template instantiation 'meta::util::disk_vector<int64_t>::~disk_vector(void)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\succinct\darray.h(359): note: see reference to class template instantiation 'meta::util::disk_vector<int64_t>' being compiled
+  c:\msys64\home\satvik\meta\include\meta\succinct\darray.h(342): note: see reference to class template instantiation 'meta::succinct::darray<WordReader>::impl' being compiled
+  c:\msys64\home\satvik\meta\include\meta\succinct\darray.h(377): note: see reference to class template instantiation 'meta::succinct::darray<WordReader>' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(422): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(367): note: while compiling class template member function 'void meta::hashing::perfect_hash_builder<KeyType>::construct_perfect_hash(void)'
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(156): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_builder<KeyType>::construct_perfect_hash(void)' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(138): note: while compiling class template member function 'void meta::hashing::perfect_hash_builder<KeyType>::operator ()(const K &)'
+          with
+          [
+              KeyType=std::string,
+              K=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(129): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_builder<KeyType>::operator ()(const K &)' being compiled
+          with
+          [
+              KeyType=std::string,
+              K=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(108): note: see reference to class template instantiation 'meta::hashing::perfect_hash_builder<KeyType>' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(388): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::io::packed::packed_read<InputStream,meta::term_id,std::allocator<_Ty>>(InputStream &,std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              InputStream=std::ifstream,
+              _Ty=meta::term_id
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(182): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<std::ifstream,KeyType>(InputStream &,T &)' being compiled
+          with
+          [
+              KeyType=std::vector<meta::term_id,std::allocator<meta::term_id>>,
+              InputStream=std::ifstream,
+              T=std::vector<meta::term_id,std::allocator<meta::term_id>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(154): note: while compiling class template member function 'void meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<_Ty>>,float,uint32_t>::reorder_values(void)'
+          with
+          [
+              _Ty=meta::term_id
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(147): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<_Ty>>,float,uint32_t>::reorder_values(void)' being compiled
+          with
+          [
+              _Ty=meta::term_id
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\numeric(25): warning C4244: '=': conversion from 'uint64_t' to 'unsigned long', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\multiway_merge.h(109): note: see reference to function template instantiation '_Ty std::accumulate<ForwardIterator,unsigned long,meta::util::multiway_merge::<lambda_9a1101f54156cc6d0154fc85f67704ac>>(_InIt,const _InIt,_Ty,_Fn)' being compiled
+          with
+          [
+              _Ty=unsigned long,
+              ForwardIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::util::chunk_iterator<meta::hashing::detail::hashed_value<float,uint32_t>>>>>,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::util::chunk_iterator<meta::hashing::detail::hashed_value<float,uint32_t>>>>>,
+              _Fn=meta::util::multiway_merge::<lambda_9a1101f54156cc6d0154fc85f67704ac>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(224): note: see reference to function template instantiation 'uint64_t meta::util::multiway_merge<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>>,float,uint32_t>::reorder_values::<lambda_d1ff053e368c97290461c7df9d31b68b>,meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>>,float,uint32_t>::reorder_values::<lambda_7e0511b195629133cc97dce574e47eae>,meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>>,float,uint32_t>::reorder_values::<lambda_4a1dff179e8268771238908880557520>,meta::printing::default_progress_trait>(ForwardIterator,ForwardIterator,Compare &&,ShouldMerge &&,RecordHandler &&,ProgressTrait)' being compiled
+          with
+          [
+              _Ty=meta::util::chunk_iterator<meta::hashing::detail::hashed_value<float,uint32_t>>,
+              ForwardIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::util::chunk_iterator<meta::hashing::detail::hashed_value<float,uint32_t>>>>>,
+              Compare=meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::term_id>>,float,uint32_t>::reorder_values::<lambda_7e0511b195629133cc97dce574e47eae>,
+              ShouldMerge=meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::term_id>>,float,uint32_t>::reorder_values::<lambda_4a1dff179e8268771238908880557520>,
+              RecordHandler=meta::hashing::perfect_hash_map_builder<std::vector<meta::term_id,std::allocator<meta::term_id>>,float,uint32_t>::reorder_values::<lambda_d1ff053e368c97290461c7df9d31b68b>,
+              ProgressTrait=meta::printing::default_progress_trait
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(60): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(17): note: while compiling class template member function 'meta::util::disk_vector<uint16_t>::disk_vector(const std::string &,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(373): note: see reference to function template instantiation 'meta::util::disk_vector<uint16_t>::disk_vector(const std::string &,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(367): note: while compiling class template member function 'void meta::hashing::perfect_hash_builder<KeyType>::construct_perfect_hash(void)'
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(156): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_builder<KeyType>::construct_perfect_hash(void)' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(105): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(98): note: while compiling class template member function 'meta::hashing::perfect_hash_builder<KeyType>::perfect_hash_builder(meta::hashing::perfect_hash_builder<KeyType>::options)'
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): note: see reference to function template instantiation 'meta::hashing::perfect_hash_builder<KeyType>::perfect_hash_builder(meta::hashing::perfect_hash_builder<KeyType>::options)' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(110): note: while compiling class template member function 'void meta::hashing::perfect_hash_builder<KeyType>::flush_chunk(void)'
+          with
+          [
+              KeyType=std::string
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(140): note: see reference to function template instantiation 'void meta::hashing::perfect_hash_builder<KeyType>::flush_chunk(void)' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::ifstream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::ifstream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_map.h(183): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<std::ifstream,Value>(InputStream &,T &)' being compiled
+          with
+          [
+              Value=float,
+              InputStream=std::ifstream,
+              T=float
+          ]
+  static_probe_map.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\lm\static_probe_map.cpp(68): warning C4309: 'static_cast': truncation of constant value
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(60): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(17): note: while compiling class template member function 'meta::util::disk_vector<uint64_t>::disk_vector(const std::string &,uint64_t)'
+  c:\msys64\home\satvik\meta\src\lm\static_probe_map.cpp(15): note: see reference to function template instantiation 'meta::util::disk_vector<uint64_t>::disk_vector(const std::string &,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\lm\static_probe_map.h(81): note: see reference to class template instantiation 'meta::util::disk_vector<uint64_t>' being compiled
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(99): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(95): note: while compiling class template member function 'meta::util::disk_vector<uint64_t>::~disk_vector(void)'
+  c:\msys64\home\satvik\meta\src\lm\static_probe_map.cpp(15): note: see reference to function template instantiation 'meta::util::disk_vector<uint64_t>::~disk_vector(void)' being compiled
+  sentence.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+  Generating Code...
+  meta-language-model.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\lib\Debug\meta-language-model.lib

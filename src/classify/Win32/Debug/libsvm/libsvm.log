@@ -1,0 +1,11 @@
+﻿  Creating directories for 'libsvm'
+  Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp is up-to-date.
+  No download step for 'libsvm'
+  No update step for 'libsvm'
+  No patch step for 'libsvm'
+  Performing configure step for 'libsvm'
+  loading initial cache file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/libsvm-prefix/tmp/libsvm-cache-Debug.cmake
+CMake Error : error : generator : Visual Studio 15 2017
+  Does not match the generator used previously: MSYS Makefiles
+  Either remove the CMakeCache.txt file and CMakeFiles directory or choose a different binary directory.

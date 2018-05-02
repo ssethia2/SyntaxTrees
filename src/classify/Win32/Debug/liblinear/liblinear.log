@@ -1,0 +1,11 @@
+﻿  Creating directories for 'liblinear'
+  Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp is up-to-date.
+  No download step for 'liblinear'
+  No update step for 'liblinear'
+  No patch step for 'liblinear'
+  Performing configure step for 'liblinear'
+  loading initial cache file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp/liblinear-cache-Debug.cmake
+CMake Error : error : generator : Visual Studio 15 2017
+  Does not match the generator used previously: MSYS Makefiles
+  Either remove the CMakeCache.txt file and CMakeFiles directory or choose a different binary directory.

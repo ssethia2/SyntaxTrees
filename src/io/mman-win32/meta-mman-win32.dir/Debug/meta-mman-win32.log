@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/io/mman-win32/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/io/mman-win32/CMakeFiles/generate.stamp is up-to-date.
+  mman.cpp
+  meta-mman-win32.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\lib\Debug\meta-mman-win32.lib

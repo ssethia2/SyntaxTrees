@@ -1,0 +1,1069 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/index/ranker/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/index/ranker/CMakeFiles/generate.stamp is up-to-date.
+  absolute_discount.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\absolute_discount.cpp(41): warning C4244: 'initializing': conversion from 'const uint64_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\absolute_discount.cpp(47): warning C4244: 'initializing': conversion from 'const uint64_t' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\absolute_discount.cpp(59): note: see reference to function template instantiation 'std::unique_ptr<meta::index::absolute_discount,std::default_delete<_Ty>> std::make_unique<meta::index::absolute_discount,T&,0>(T &)' being compiled
+          with
+          [
+              _Ty=meta::index::absolute_discount,
+              T=double
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\absolute_discount.cpp(25): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  dirichlet_prior.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\dirichlet_prior.cpp(56): note: see reference to function template instantiation 'std::unique_ptr<meta::index::dirichlet_prior,std::default_delete<_Ty>> std::make_unique<meta::index::dirichlet_prior,T&,0>(T &)' being compiled
+          with
+          [
+              _Ty=meta::index::dirichlet_prior,
+              T=double
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\dirichlet_prior.cpp(24): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  jelinek_mercer.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\jelinek_mercer.cpp(57): note: see reference to function template instantiation 'std::unique_ptr<meta::index::jelinek_mercer,std::default_delete<_Ty>> std::make_unique<meta::index::jelinek_mercer,T&,0>(T &)' being compiled
+          with
+          [
+              _Ty=meta::index::jelinek_mercer,
+              T=double
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\jelinek_mercer.cpp(24): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  lm_ranker.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(101): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(120): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(132): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+  okapi_bm25.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(101): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(120): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(132): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\okapi_bm25.cpp(47): warning C4244: 'initializing': conversion from 'const uint64_t' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\okapi_bm25.cpp(79): note: see reference to function template instantiation 'std::unique_ptr<meta::index::okapi_bm25,std::default_delete<_Ty>> std::make_unique<meta::index::okapi_bm25,T&,T&,T&,0>(T &,T &,T &)' being compiled
+          with
+          [
+              _Ty=meta::index::okapi_bm25,
+              T=double
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\okapi_bm25.cpp(29): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  pivoted_length.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(101): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(120): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(132): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\pivoted_length.cpp(39): warning C4244: 'initializing': conversion from 'const uint64_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\pivoted_length.cpp(41): warning C4244: 'argument': conversion from 'const uint64_t' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\pivoted_length.cpp(55): note: see reference to function template instantiation 'std::unique_ptr<meta::index::pivoted_length,std::default_delete<_Ty>> std::make_unique<meta::index::pivoted_length,T&,0>(T &)' being compiled
+          with
+          [
+              _Ty=meta::index::pivoted_length,
+              T=double
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\pivoted_length.cpp(25): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  kl_divergence_prf.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(99): warning C4244: 'initializing': conversion from 'uint64_t' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\learn\dataset.h(77): warning C4244: 'initializing': conversion from 'uint64_t' to 'meta::learn::dataset::size_type', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(92): note: see reference to function template instantiation 'meta::learn::dataset::dataset<meta::util::transform_iterator<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,meta::index::kl_divergence_prf::rank::<lambda_734613fbf3d998b8806e61b1e9098fc3> &>,meta::printing::no_progress_trait>(std::shared_ptr<meta::index::forward_index>,ForwardIterator,ForwardIterator,ProgressTrait)' being compiled
+          with
+          [
+              _Ty=meta::index::search_result,
+              ForwardIterator=meta::util::transform_iterator<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::index::search_result>>>,meta::index::kl_divergence_prf::rank::<lambda_734613fbf3d998b8806e61b1e9098fc3> &>,
+              ProgressTrait=meta::printing::no_progress_trait
+          ]
+c:\msys64\home\satvik\meta\include\meta\learn\dataset.h(84): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(160): note: see reference to function template instantiation 'std::unique_ptr<meta::index::kl_divergence_prf,std::default_delete<_Ty>> std::make_unique<meta::index::kl_divergence_prf,std::shared_ptr<meta::index::forward_index>,std::unique_ptr<meta::index::language_model_ranker,std::default_delete<meta::index::language_model_ranker>>,T&,T&,unsigned __int64&,unsigned __int64&,0>(std::shared_ptr<meta::index::forward_index> &&,std::unique_ptr<meta::index::language_model_ranker,std::default_delete<meta::index::language_model_ranker>> &&,T &,T &,unsigned __int64 &,unsigned __int64 &)' being compiled
+          with
+          [
+              _Ty=meta::index::kl_divergence_prf,
+              T=double
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>(const T &) const' being compiled
+          with
+          [
+              T=meta::util::numerical_identifier<meta::term_id_tag,uint64_t>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>(const T &) const' being compiled
+          with
+          [
+              T=meta::util::numerical_identifier<meta::term_id_tag,uint64_t>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(514): note: while compiling class template member function 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const meta::util::numerical_identifier<meta::term_id_tag,uint64_t> &)'
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(86): note: see reference to function template instantiation 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const meta::util::numerical_identifier<meta::term_id_tag,uint64_t> &)' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(1129): note: see reference to class template instantiation 'meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(42): note: see reference to class template instantiation 'meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(114): note: see reference to class template instantiation 'meta::hashing::probe_map<meta::term_id,float,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<Key>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>>' being compiled
+          with
+          [
+              Key=meta::term_id,
+              Value=float
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<scored_term,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(26): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<scored_term,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(59): note: while compiling class template member function 'std::vector<T,std::allocator<_Ty>> meta::util::fixed_heap<T,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::extract_top(void)'
+          with
+          [
+              T=scored_term,
+              _Ty=scored_term
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(115): note: see reference to function template instantiation 'std::vector<T,std::allocator<_Ty>> meta::util::fixed_heap<T,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::extract_top(void)' being compiled
+          with
+          [
+              T=scored_term,
+              _Ty=scored_term
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(109): note: see reference to class template instantiation 'meta::util::fixed_heap<scored_term,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(62): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(201): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xmemory0(919): note: see reference to function template instantiation 'std::pair<meta::term_id,float>::pair<meta::term_id&,_Ty,0>(_Other1,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Ty=double,
+              _Other1=meta::term_id &,
+              _Other2=double
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xmemory0(919): note: see reference to function template instantiation 'std::pair<meta::term_id,float>::pair<meta::term_id&,_Ty,0>(_Other1,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Ty=double,
+              _Other1=meta::term_id &,
+              _Other2=double
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(968): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,meta::term_id&,double>(_Alloc &,_Objty *const ,meta::term_id &,double &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<scored_term>,
+              _Ty=std::pair<meta::term_id,float>,
+              _Objty=std::pair<meta::term_id,float>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(968): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,meta::term_id&,double>(_Alloc &,_Objty *const ,meta::term_id &,double &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<scored_term>,
+              _Ty=std::pair<meta::term_id,float>,
+              _Objty=std::pair<meta::term_id,float>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(24): note: see reference to function template instantiation 'void std::vector<T,std::allocator<_Ty>>::emplace_back<meta::term_id&,double>(meta::term_id &,double &&)' being compiled
+          with
+          [
+              T=scored_term,
+              _Ty=scored_term
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(111): note: see reference to function template instantiation 'void meta::util::fixed_heap<scored_term,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::emplace<meta::term_id&,double>(meta::term_id &,double &&)' being compiled
+  c:\msys64\home\satvik\meta\src\index\ranker\kl_divergence_prf.cpp(111): note: see reference to function template instantiation 'void meta::util::fixed_heap<scored_term,meta::index::kl_divergence_prf::rank::<lambda_db3bf0f28322c2996ab9984f3c2902aa>>::emplace<meta::term_id&,double>(meta::term_id &,double &&)' being compiled
+  rocchio.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(108): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(2599): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(156): note: see reference to function template instantiation 'std::unique_ptr<meta::index::rocchio,std::default_delete<_Ty>> std::make_unique<meta::index::rocchio,std::shared_ptr<meta::index::forward_index>,std::unique_ptr<Type,std::default_delete<meta::index::ranker>>,T&,T&,unsigned __int64&,unsigned __int64&,0>(std::shared_ptr<meta::index::forward_index> &&,std::unique_ptr<Type,std::default_delete<meta::index::ranker>> &&,T &,T &,unsigned __int64 &,unsigned __int64 &)' being compiled
+          with
+          [
+              _Ty=meta::index::rocchio,
+              Type=meta::index::ranker,
+              T=double
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>(const T &) const' being compiled
+          with
+          [
+              T=meta::util::numerical_identifier<meta::term_id_tag,uint64_t>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<meta::util::numerical_identifier<meta::term_id_tag,uint64_t>>(const T &) const' being compiled
+          with
+          [
+              T=meta::util::numerical_identifier<meta::term_id_tag,uint64_t>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(514): note: while compiling class template member function 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const meta::util::numerical_identifier<meta::term_id_tag,uint64_t> &)'
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(86): note: see reference to function template instantiation 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const meta::util::numerical_identifier<meta::term_id_tag,uint64_t> &)' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(1129): note: see reference to class template instantiation 'meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(42): note: see reference to class template instantiation 'meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>' being compiled
+          with
+          [
+              K=meta::term_id,
+              V=float,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<meta::term_id>
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(86): note: see reference to class template instantiation 'meta::hashing::probe_map<meta::term_id,float,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<Key>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>>' being compiled
+          with
+          [
+              Key=meta::term_id,
+              Value=float
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<scored_term,meta::index::rocchio::rank::<lambda_c5fc308b46c260c98d5fbb3106f60d79>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(26): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<scored_term,meta::index::rocchio::rank::<lambda_c5fc308b46c260c98d5fbb3106f60d79>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(59): note: while compiling class template member function 'std::vector<T,std::allocator<_Ty>> meta::util::fixed_heap<T,meta::index::rocchio::rank::<lambda_c5fc308b46c260c98d5fbb3106f60d79>>::extract_top(void)'
+          with
+          [
+              T=scored_term,
+              _Ty=scored_term
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(126): note: see reference to function template instantiation 'std::vector<T,std::allocator<_Ty>> meta::util::fixed_heap<T,meta::index::rocchio::rank::<lambda_c5fc308b46c260c98d5fbb3106f60d79>>::extract_top(void)' being compiled
+          with
+          [
+              T=scored_term,
+              _Ty=scored_term
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(118): note: see reference to class template instantiation 'meta::util::fixed_heap<scored_term,meta::index::rocchio::rank::<lambda_c5fc308b46c260c98d5fbb3106f60d79>>' being compiled
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(424): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=float
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\rocchio.cpp(60): note: see reference to function template instantiation 'T meta::io::packed::read<float,std::istream>(InputStream &)' being compiled
+          with
+          [
+              T=float,
+              InputStream=std::istream
+          ]
+  ranker.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<meta::index::search_result,meta::index::ranking_function::rank::<lambda_c03c818f5fb077d900b79876b89282cd>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(26): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<meta::index::search_result,meta::index::ranking_function::rank::<lambda_c03c818f5fb077d900b79876b89282cd>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(59): note: while compiling class template member function 'std::vector<meta::index::search_result,std::allocator<_Ty>> meta::util::fixed_heap<meta::index::search_result,meta::index::ranking_function::rank::<lambda_c03c818f5fb077d900b79876b89282cd>>::extract_top(void)'
+          with
+          [
+              _Ty=meta::index::search_result
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\ranker.cpp(87): note: see reference to function template instantiation 'std::vector<meta::index::search_result,std::allocator<_Ty>> meta::util::fixed_heap<meta::index::search_result,meta::index::ranking_function::rank::<lambda_c03c818f5fb077d900b79876b89282cd>>::extract_top(void)' being compiled
+          with
+          [
+              _Ty=meta::index::search_result
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\ranker.cpp(39): note: see reference to class template instantiation 'meta::util::fixed_heap<meta::index::search_result,meta::index::ranking_function::rank::<lambda_c03c818f5fb077d900b79876b89282cd>>' being compiled
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xmemory0(919): warning C4244: 'argument': conversion from 'const uint64_t' to 'float', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(968): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,T&,const V&,meta::term_id&>(_Alloc &,_Objty *const ,T &,const V &,meta::term_id &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<meta::index::detail::postings_context>,
+              _Ty=meta::index::detail::postings_context,
+              T=meta::index::postings_stream<meta::doc_id,uint64_t>,
+              V=uint64_t,
+              _Objty=meta::index::detail::postings_context
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\vector(968): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,T&,const V&,meta::term_id&>(_Alloc &,_Objty *const ,T &,const V &,meta::term_id &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<meta::index::detail::postings_context>,
+              _Ty=meta::index::detail::postings_context,
+              T=meta::index::postings_stream<meta::doc_id,uint64_t>,
+              V=uint64_t,
+              _Objty=meta::index::detail::postings_context
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(126): note: see reference to function template instantiation 'void std::vector<meta::index::detail::postings_context,std::allocator<_Ty>>::emplace_back<T&,const V&,meta::term_id&>(T &,const V &,meta::term_id &)' being compiled
+          with
+          [
+              _Ty=meta::index::detail::postings_context,
+              T=meta::index::postings_stream<meta::doc_id,uint64_t>,
+              V=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(199): note: see reference to function template instantiation 'meta::index::ranker_context::ranker_context<ForwardIterator,const meta::index::ranker::filter_function_type&>(meta::index::inverted_index &,ForwardIterator,ForwardIterator,FilterFunction)' being compiled
+          with
+          [
+              ForwardIterator=meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<std::string,uint64_t,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<std::string>>>,
+              FilterFunction=const meta::index::ranker::filter_function_type &
+          ]
+  c:\msys64\home\satvik\meta\src\index\ranker\ranker.cpp(25): note: see reference to function template instantiation 'std::vector<meta::index::search_result,std::allocator<_Ty>> meta::index::ranker::score<meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>,const meta::index::ranker::filter_function_type&>(meta::index::inverted_index &,ForwardIterator,ForwardIterator,uint64_t,Function)' being compiled
+          with
+          [
+              _Ty=meta::index::search_result,
+              K=std::string,
+              V=uint64_t,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>,
+              ForwardIterator=meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<std::string,uint64_t,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<std::string>>>,
+              Function=const meta::index::ranker::filter_function_type &
+          ]
+  ranker_factory.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\utility(234): warning C4244: 'initializing': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(189): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(188): note: see reference to function template instantiation 'std::pair<SecondaryKey,FeatureValue>::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double,0>(std::pair<meta::util::numerical_identifier<meta::doc_id_tag,uint64_t>,double> &&) noexcept' being compiled
+          with
+          [
+              SecondaryKey=meta::doc_id,
+              FeatureValue=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(184): note: while compiling class template member function 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(204): note: see reference to function template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator::iterator(const char *,uint64_t)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\index\ranker\ranker.h(61): note: see reference to class template instantiation 'meta::index::postings_stream<meta::doc_id,uint64_t>::iterator' being compiled
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(114): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<_Kty>(const T &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              T=meta::util::string_view
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(113): note: while compiling class template member function 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const'
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(1121): note: see reference to function template instantiation 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(28): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(160): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=meta::util::string_view,
+              _Ty=std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,
+              _Hasher=std::hash<meta::util::string_view>,
+              _Keyeq=std::equal_to<meta::util::string_view>,
+              _Alloc=std::allocator<std::pair<const meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<meta::corpus::corpus>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\util\factory.h(91): note: see reference to class template instantiation 'std::unordered_map<meta::util::string_view,std::function<std::unique_ptr<meta::corpus::corpus,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,std::function<std::unique_ptr<_Ty,std::default_delete<_Ty>> (meta::util::string_view,meta::util::string_view,const cpptoml::table &)>>>>' being compiled
+          with
+          [
+              _Ty=meta::corpus::corpus,
+              _Kty=meta::util::string_view
+          ]
+  c:\msys64\home\satvik\meta\include\meta\corpus\corpus_factory.h(37): note: see reference to class template instantiation 'meta::util::factory<meta::corpus::corpus_factory,meta::corpus::corpus,meta::util::string_view,meta::util::string_view,const cpptoml::table &>' being compiled
+  Generating Code...
+  meta-ranker.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\lib\Debug\meta-ranker.lib

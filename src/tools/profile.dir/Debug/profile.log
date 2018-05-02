@@ -1,0 +1,110 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/tools/CMakeFiles/generate.stamp is up-to-date.
+  profile.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\analyzers\featurizer.h(97): warning C4244: '+=': conversion from 'double' to 'uint64_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\analyzers\featurizer.h(93): note: while compiling class template member function 'void meta::analyzers::featurizer::concrete_map<T>::increment(const std::string &,double)'
+          with
+          [
+              T=uint64_t
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\type_traits(519): note: see reference to class template instantiation 'meta::analyzers::featurizer::concrete_map<T>' being compiled
+          with
+          [
+              T=uint64_t
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\type_traits(1345): note: see reference to class template instantiation 'std::is_convertible<meta::analyzers::featurizer::concrete_map<T> *,_Ty *>' being compiled
+          with
+          [
+              T=uint64_t,
+              _Ty=meta::analyzers::featurizer::map_concept
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\type_traits(1357): note: see reference to class template instantiation 'std::_Conjunction<true,_First,std::is_convertible<meta::analyzers::featurizer::concrete_map<T> *,_Ty *>,std::is_convertible<std::default_delete<meta::analyzers::featurizer::concrete_map<T>>,std::default_delete<_Ty>>>' being compiled
+          with
+          [
+              _First=std::negation<std::is_array<meta::analyzers::featurizer::concrete_map<uint64_t>>>,
+              T=uint64_t,
+              _Ty=meta::analyzers::featurizer::map_concept
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\type_traits(1363): note: see reference to class template instantiation 'std::conjunction<std::negation<std::is_array<_Ty>>,std::is_convertible<meta::analyzers::featurizer::concrete_map<T> *,meta::analyzers::featurizer::map_concept *>,std::is_convertible<std::default_delete<_Ty>,std::default_delete<meta::analyzers::featurizer::map_concept>>>' being compiled
+          with
+          [
+              _Ty=meta::analyzers::featurizer::concrete_map<uint64_t>,
+              T=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\analyzers\featurizer.h(97): note: see reference to variable template 'const bool conjunction_v<std::negation<std::is_array<meta::analyzers::featurizer::concrete_map<unsigned __int64> > >,std::is_convertible<meta::analyzers::featurizer::concrete_map<unsigned __int64> *,meta::analyzers::featurizer::map_concept *>,std::is_convertible<std::default_delete<meta::analyzers::featurizer::concrete_map<unsigned __int64> >,std::default_delete<meta::analyzers::featurizer::map_concept> > >' being compiled
+  c:\msys64\home\satvik\meta\include\meta\analyzers\analyzer.h(70): note: see reference to function template instantiation 'meta::analyzers::featurizer::featurizer<uint64_t>(meta::hashing::probe_map<std::string,uint64_t,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<Key>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>> &)' being compiled
+          with
+          [
+              Key=std::string,
+              Value=uint64_t
+          ]
+  c:\msys64\home\satvik\meta\src\tools\profile.cpp(292): note: see reference to function template instantiation 'meta::hashing::probe_map<std::string,uint64_t,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<Key>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>> meta::analyzers::analyzer::analyze<uint64_t>(const meta::corpus::document &)' being compiled
+          with
+          [
+              Key=std::string,
+              Value=uint64_t
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>(const T &) const' being compiled
+          with
+          [
+              T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(515): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>(const T &) const' being compiled
+          with
+          [
+              T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(514): note: while compiling class template member function 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
+          with
+          [
+              K=std::string,
+              V=uint64_t,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(86): note: see reference to function template instantiation 'meta::hashing::key_value_storage_iterator<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)' being compiled
+          with
+          [
+              K=std::string,
+              V=uint64_t,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(1129): note: see reference to class template instantiation 'meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>' being compiled
+          with
+          [
+              K=std::string,
+              V=uint64_t,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(42): note: see reference to class template instantiation 'meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>' being compiled
+          with
+          [
+              K=std::string,
+              V=uint64_t,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\src\tools\profile.cpp(292): note: see reference to class template instantiation 'meta::hashing::probe_map<std::string,uint64_t,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<Key>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>>' being compiled
+          with
+          [
+              Key=std::string,
+              Value=uint64_t
+          ]
+LINK : fatal error LNK1104: cannot open file '..\..\lib\Debug\meta-greedy-tagger.lib'

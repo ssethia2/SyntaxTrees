@@ -1,0 +1,411 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/topics/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/topics/CMakeFiles/generate.stamp is up-to-date.
+  inferencer.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\inferencer.cpp(83): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\inferencer.cpp(90): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\multinomial.h(153): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,double>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::stats::packed_read<InputStream>(InputStream &,meta::stats::multinomial<meta::term_id> &)' being compiled
+          with
+          [
+              InputStream=std::istream
+          ]
+  c:\msys64\home\satvik\meta\src\topics\inferencer.cpp(83): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<std::istream,_Ty>(InputStream &,T &)' being compiled
+          with
+          [
+              _Ty=meta::stats::multinomial<meta::term_id>,
+              InputStream=std::istream,
+              T=meta::stats::multinomial<meta::term_id>
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(388): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::io::packed::packed_read<InputStream,std::pair<Index,Value>,std::allocator<_Ty>>(InputStream &,std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              Index=meta::term_id,
+              Value=double,
+              _Ty=std::pair<meta::term_id,double>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\dirichlet.h(157): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,std::vector<std::pair<Index,Value>,std::allocator<_Ty>>>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              Index=meta::term_id,
+              Value=double,
+              _Ty=std::pair<meta::term_id,double>,
+              T=std::vector<std::pair<meta::term_id,double>,std::allocator<std::pair<meta::term_id,double>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::stats::packed_read<InputStream>(InputStream &,meta::stats::dirichlet<T> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=meta::term_id
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\multinomial.h(161): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,meta::stats::dirichlet<T>>(InputStream &,meta::stats::dirichlet<T> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=meta::term_id
+          ]
+  lda_cvb.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(28): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(73): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(80): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(81): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(97): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(100): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(101): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(105): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(106): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(110): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(111): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(122): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(128): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(133): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(138): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(132): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\lda_cvb.cpp(82): note: see reference to function template instantiation 'double meta::topics::detail::update_gamma<meta::topics::lda_cvb::initialize::<lambda_7930e6edef01c660d6514c47637c76a0>,meta::topics::lda_cvb::initialize::<lambda_b46b6b7fd22778c9303480e0bc0c25a1>,meta::topics::lda_cvb::initialize::<lambda_22ab7ee051eb262c71cf0af919cd9e60>>(const meta::learn::feature_vector &,::size_t,std::vector<meta::stats::multinomial<meta::topic_id>,std::allocator<_Ty>> &,DecreaseCounts &&,UpdateWeight &&,IncreaseCounts &&)' being compiled
+          with
+          [
+              _Ty=meta::stats::multinomial<meta::topic_id>,
+              DecreaseCounts=meta::topics::lda_cvb::initialize::<lambda_7930e6edef01c660d6514c47637c76a0>,
+              UpdateWeight=meta::topics::lda_cvb::initialize::<lambda_b46b6b7fd22778c9303480e0bc0c25a1>,
+              IncreaseCounts=meta::topics::lda_cvb::initialize::<lambda_22ab7ee051eb262c71cf0af919cd9e60>
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(139): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(141): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(147): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  lda_cvb_inferencer.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(132): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\lda_cvb_inferencer.cpp(48): note: see reference to function template instantiation 'double meta::topics::detail::update_gamma<meta::topics::lda_cvb::inferencer::()::<lambda_80583e8e8788d42976b24b9ac5513c87>,meta::topics::lda_cvb::inferencer::()::<lambda_5606e2eac93ea11dd7aa9f83c54a2e51>,meta::topics::lda_cvb::inferencer::()::<lambda_ce1f1af50561c09869fe35fc6292880b>>(const meta::learn::feature_vector &,::size_t,std::vector<meta::stats::multinomial<meta::topic_id>,std::allocator<_Ty>> &,DecreaseCounts &&,UpdateWeight &&,IncreaseCounts &&)' being compiled
+          with
+          [
+              _Ty=meta::stats::multinomial<meta::topic_id>,
+              DecreaseCounts=meta::topics::lda_cvb::inferencer::()::<lambda_80583e8e8788d42976b24b9ac5513c87>,
+              UpdateWeight=meta::topics::lda_cvb::inferencer::()::<lambda_5606e2eac93ea11dd7aa9f83c54a2e51>,
+              IncreaseCounts=meta::topics::lda_cvb::inferencer::()::<lambda_ce1f1af50561c09869fe35fc6292880b>
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(139): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(141): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\topics\lda_cvb.h(147): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  lda_gibbs.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(29): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(83): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(89): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(94): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(99): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(120): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(125): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(126): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(131): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(132): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(136): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(137): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(147): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(155): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(156): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(158): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_gibbs.h(188): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\lda_gibbs.cpp(139): note: see reference to function template instantiation 'void meta::topics::detail::sample_document<meta::topics::lda_gibbs::perform_iteration::<lambda_815f03eb19e7ab86101cbee935c694c9>,meta::topics::lda_gibbs::perform_iteration::<lambda_8d6365de7d0ffa1c0aa6469b68ea7e9b>,meta::topics::lda_gibbs::perform_iteration::<lambda_28dbee3a17f857f276b2119f779203ee>,std::mt19937_64&>(const meta::learn::feature_vector &,::size_t,std::vector<meta::topic_id,std::allocator<_Ty>> &,DecreaseCounts &&,SampleWeight &&,IncreaseCounts &&,RandomNumberGenerator)' being compiled
+          with
+          [
+              _Ty=meta::topic_id,
+              DecreaseCounts=meta::topics::lda_gibbs::perform_iteration::<lambda_815f03eb19e7ab86101cbee935c694c9>,
+              SampleWeight=meta::topics::lda_gibbs::perform_iteration::<lambda_8d6365de7d0ffa1c0aa6469b68ea7e9b>,
+              IncreaseCounts=meta::topics::lda_gibbs::perform_iteration::<lambda_28dbee3a17f857f276b2119f779203ee>,
+              RandomNumberGenerator=std::mt19937_64 &
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_gibbs.h(197): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  lda_model.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_model.cpp(61): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\numeric(25): warning C4244: 'argument': conversion from 'double' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\lda_model.cpp(60): note: see reference to function template instantiation '_Ty std::accumulate<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::pair<Index,Value>>>>,double,meta::topics::lda_model::doc_size::<lambda_fee4650b9da767976b9fa2c1d336dd18>>(_InIt,const _InIt,_Ty,_Fn)' being compiled
+          with
+          [
+              _Ty=double,
+              Index=meta::learn::feature_id,
+              Value=double,
+              _InIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::pair<meta::learn::feature_id,double>>>>,
+              _Fn=meta::topics::lda_model::doc_size::<lambda_fee4650b9da767976b9fa2c1d336dd18>
+          ]
+  lda_scvb.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(54): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(55): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(64): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(69): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(70): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(70): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(71): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(71): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(72): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(103): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(103): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(104): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(105): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(105): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(106): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(110): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(113): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(113): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(114): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(114): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(115): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(115): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(126): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(126): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(127): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(128): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(128): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(129): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(134): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(140): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(140): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(141): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(141): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(142): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(142): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(144): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(145): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(147): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(166): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(167): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(168): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(170): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(171): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(178): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(179): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(185): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(186): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(196): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\lda_scvb.cpp(209): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+  parallel_lda_gibbs.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(45): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(50): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(51): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(56): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(57): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(58): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(59): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(63): warning C4244: 'argument': conversion from 'const uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(64): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(72): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(77): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_gibbs.h(188): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\parallel_lda_gibbs.cpp(66): note: see reference to function template instantiation 'void meta::topics::detail::sample_document<meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_3d2da2b47418f218cda539bd01567464>,meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_c9c0d833426da94403b5c3921121d70e>,meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_dd50f40b2ce6bf3ae61b52fc64ddeec1>,std::mt19937_64&>(const meta::learn::feature_vector &,::size_t,std::vector<meta::topic_id,std::allocator<_Ty>> &,DecreaseCounts &&,SampleWeight &&,IncreaseCounts &&,RandomNumberGenerator)' being compiled
+          with
+          [
+              _Ty=meta::topic_id,
+              DecreaseCounts=meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_3d2da2b47418f218cda539bd01567464>,
+              SampleWeight=meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_c9c0d833426da94403b5c3921121d70e>,
+              IncreaseCounts=meta::topics::parallel_lda_gibbs::perform_iteration::<lambda_f2e6c118def2f12528ab69c8f1571450>::()::<lambda_dd50f40b2ce6bf3ae61b52fc64ddeec1>,
+              RandomNumberGenerator=std::mt19937_64 &
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\lda_gibbs.h(197): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  topic_model.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(42): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(75): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(81): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(86): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(91): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\topics\topic_model.h(148): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(69): note: see reference to function template instantiation 'std::vector<meta::topics::term_prob,std::allocator<_Ty>> meta::topics::topic_model::top_k<meta::topics::topic_model::top_k::<lambda_773ddc12f3b3d2d4848ad3c5047f656e>>(meta::topic_id,::size_t,T &&) const' being compiled
+          with
+          [
+              _Ty=meta::topics::term_prob,
+              T=meta::topics::topic_model::top_k::<lambda_773ddc12f3b3d2d4848ad3c5047f656e>
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(54): warning C4244: 'return': conversion from 'const uint64_t' to 'unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(53): note: while compiling class template member function 'unsigned int meta::util::fixed_heap<meta::topics::term_prob,meta::topics::topic_model::top_k::<lambda_b8cfce19ff74764b9fabee46515e10d2>>::max_elems(void) const'
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(38): note: see reference to function template instantiation 'unsigned int meta::util::fixed_heap<meta::topics::term_prob,meta::topics::topic_model::top_k::<lambda_b8cfce19ff74764b9fabee46515e10d2>>::max_elems(void) const' being compiled
+  c:\msys64\home\satvik\meta\include\meta\util\fixed_heap.tcc(35): note: while compiling class template member function 'void meta::util::fixed_heap<meta::topics::term_prob,meta::topics::topic_model::top_k::<lambda_b8cfce19ff74764b9fabee46515e10d2>>::push(const T &)'
+          with
+          [
+              T=meta::topics::term_prob
+          ]
+  c:\msys64\home\satvik\meta\include\meta\topics\topic_model.h(152): note: see reference to function template instantiation 'void meta::util::fixed_heap<meta::topics::term_prob,meta::topics::topic_model::top_k::<lambda_b8cfce19ff74764b9fabee46515e10d2>>::push(const T &)' being compiled
+          with
+          [
+              T=meta::topics::term_prob
+          ]
+  c:\msys64\home\satvik\meta\include\meta\topics\topic_model.h(146): note: see reference to class template instantiation 'meta::util::fixed_heap<meta::topics::term_prob,meta::topics::topic_model::top_k::<lambda_b8cfce19ff74764b9fabee46515e10d2>>' being compiled
+  c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(69): note: see reference to function template instantiation 'std::vector<meta::topics::term_prob,std::allocator<_Ty>> meta::topics::topic_model::top_k<meta::topics::topic_model::top_k::<lambda_773ddc12f3b3d2d4848ad3c5047f656e>>(meta::topic_id,::size_t,T &&) const' being compiled
+          with
+          [
+              _Ty=meta::topics::term_prob,
+              T=meta::topics::topic_model::top_k::<lambda_773ddc12f3b3d2d4848ad3c5047f656e>
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\multinomial.h(153): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,double>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::stats::packed_read<InputStream>(InputStream &,meta::stats::multinomial<meta::topic_id> &)' being compiled
+          with
+          [
+              InputStream=std::istream
+          ]
+  c:\msys64\home\satvik\meta\src\topics\topic_model.cpp(60): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<std::istream,_Ty>(InputStream &,T &)' being compiled
+          with
+          [
+              _Ty=meta::stats::multinomial<meta::topic_id>,
+              InputStream=std::istream,
+              T=meta::stats::multinomial<meta::topic_id>
+          ]
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(388): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::io::packed::packed_read<InputStream,std::pair<Index,Value>,std::allocator<_Ty>>(InputStream &,std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              Index=meta::topic_id,
+              Value=double,
+              _Ty=std::pair<meta::topic_id,double>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\dirichlet.h(157): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,std::vector<std::pair<Index,Value>,std::allocator<_Ty>>>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              Index=meta::topic_id,
+              Value=double,
+              _Ty=std::pair<meta::topic_id,double>,
+              T=std::vector<std::pair<meta::topic_id,double>,std::allocator<std::pair<meta::topic_id,double>>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'uint64_t meta::stats::packed_read<InputStream>(InputStream &,meta::stats::dirichlet<T> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=meta::topic_id
+          ]
+  c:\msys64\home\satvik\meta\include\meta\stats\multinomial.h(161): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<InputStream,meta::stats::dirichlet<T>>(InputStream &,meta::stats::dirichlet<T> &)' being compiled
+          with
+          [
+              InputStream=std::istream,
+              T=meta::topic_id
+          ]
+  bl_term_scorer.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(101): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(120): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\math\fastapprox.h(132): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+c:\msys64\home\satvik\meta\src\topics\bl_term_scorer.cpp(36): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+  Generating Code...
+  meta-topics.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\lib\Debug\meta-topics.lib

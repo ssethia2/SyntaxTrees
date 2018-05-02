@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\absolute_discount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\dirichlet_prior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\jelinek_mercer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\lm_ranker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\okapi_bm25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\pivoted_length.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\kl_divergence_prf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\rocchio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\ranker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\index\ranker\ranker_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\msys64\home\Satvik\meta\src\index\ranker\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB4736CD-CD77-36AA-BE73-EE84E7EE7C21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

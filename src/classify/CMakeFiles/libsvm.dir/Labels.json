@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/libsvm"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/2ee577bdd3189ec43de504932138ba61/libsvm.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/c4295a55bd031435ae9de3008b5f76b6/libsvm-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-install.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-download.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-update.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/8130fa0f57ba2f129ce589f2d439fab1/libsvm-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libsvm"
+		],
+		"name" : "libsvm"
+	}
+}

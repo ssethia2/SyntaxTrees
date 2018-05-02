@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "../tree_gen.h"
 
 using std::string;
 
@@ -23,6 +24,7 @@ public:
 	void setup();
 	void update();
 	void draw();
+	void drawTree(BinaryTree::Node *root, int i, int j, int count, int offset);
 
 	void keyPressed(int key);
 

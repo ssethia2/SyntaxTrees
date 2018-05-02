@@ -1,0 +1,36 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/embeddings/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/embeddings/tools/CMakeFiles/generate.stamp is up-to-date.
+  interactive_embeddings.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\algorithm(1379): warning C4996: 'std::transform::_Unchecked_iterators::_Deprecate': Call to 'std::transform' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\algorithm(1378): note: see declaration of 'std::transform::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\math\vector.h(247): note: see reference to function template instantiation '_OutIt std::transform<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,T*,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,meta::math::operators::-::<lambda_13163cc262c07a450979736f579796be>>(const _InIt1,const _InIt1,const _InIt2,_OutIt,_Fn)' being compiled
+          with
+          [
+              _OutIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _Ty=double,
+              T=const double,
+              _InIt1=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _InIt2=const double *,
+              _Fn=meta::math::operators::-::<lambda_13163cc262c07a450979736f579796be>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\math\vector.h(238): note: see reference to function template instantiation 'std::vector<double,std::allocator<_Ty>> meta::math::operators::operator -<double,const double,std::allocator<_Ty>>(std::vector<_Ty,std::allocator<_Ty>> &&,meta::util::array_view<const double>)' being compiled
+          with
+          [
+              _Ty=double
+          ]
+  c:\msys64\home\satvik\meta\src\embeddings\tools\interactive_embeddings.cpp(79): note: see reference to function template instantiation 'std::vector<double,std::allocator<_Ty>> meta::math::operators::operator -<double,const double,std::allocator<_Ty>>(const std::vector<_Ty,std::allocator<_Ty>> &,meta::util::array_view<const double>)' being compiled
+          with
+          [
+              _Ty=double
+          ]
+LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-corpus.lib'

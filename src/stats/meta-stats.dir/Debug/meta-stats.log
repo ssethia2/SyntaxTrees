@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/stats/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/stats/CMakeFiles/generate.stamp is up-to-date.
+  running_stats.cpp
+  meta-stats.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\lib\Debug\meta-stats.lib

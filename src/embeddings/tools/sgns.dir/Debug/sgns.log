@@ -1,0 +1,73 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/embeddings/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/embeddings/tools/CMakeFiles/generate.stamp is up-to-date.
+  sgns.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(57): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(111): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(153): warning C4244: 'argument': conversion from 'double' to 'const size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(415): warning C4244: '=': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(427): warning C4244: 'argument': conversion from 'const uint64_t' to 'double', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\hashing\hash.h(351): warning C4244: 'argument': conversion from 'uint64_t' to 'meta::hashing::murmur_hash<4>::result_type', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(499): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>(const T &) const' being compiled
+          with
+          [
+              T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(499): note: see reference to function template instantiation 'unsigned int meta::hashing::hash<meta::hashing::default_hasher<4>::type>::operator ()<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>(const T &) const' being compiled
+          with
+          [
+              T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(498): note: while compiling class template member function 'meta::hashing::key_value_storage_iterator<const meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) const'
+          with
+          [
+              K=std::string,
+              V=unsigned int,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(361): note: see reference to function template instantiation 'meta::hashing::key_value_storage_iterator<const meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>> meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>::find(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) const' being compiled
+          with
+          [
+              K=std::string,
+              V=unsigned int,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\hash_storage.h(1129): note: see reference to class template instantiation 'meta::hashing::storage_base<meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>>' being compiled
+          with
+          [
+              K=std::string,
+              V=unsigned int,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\include\meta\hashing\probe_map.h(42): note: see reference to class template instantiation 'meta::hashing::external_key_value_storage<K,V,ProbingStrategy,Hash,KeyEqual>' being compiled
+          with
+          [
+              K=std::string,
+              V=unsigned int,
+              ProbingStrategy=meta::hashing::probing::binary,
+              Hash=meta::hashing::hash<meta::hashing::default_hasher<4>::type>,
+              KeyEqual=std::equal_to<std::string>
+          ]
+  c:\msys64\home\satvik\meta\src\embeddings\tools\sgns.cpp(96): note: see reference to class template instantiation 'meta::hashing::probe_map<std::string,unsigned int,meta::hashing::probing::binary,meta::hashing::hash<meta::hashing::default_hasher<4>::type>,std::equal_to<_Kty>,meta::hashing::hash_traits<meta::hashing::kv_pair<Key,Value>>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              Key=std::string,
+              Value=unsigned int
+          ]
+LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-io.lib'

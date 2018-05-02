@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50328EBB-47B4-3C5C-A628-1F5C2C59383A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/sequence/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/sequence/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/sequence/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/sequence/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/msys64/home/Satvik/meta/src/sequence/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;C:\msys64\home\Satvik\meta\src\sequence\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\ZERO_CHECK.vcxproj">
+      <Project>{C290A582-B682-31C5-83CA-596347701D17}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\crf\tools\crf-test.vcxproj">
+      <Project>{7BBB76D3-21E9-3709-B4DA-20F8C6F0D546}</Project>
+      <Name>crf-test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\crf\tools\crf-train.vcxproj">
+      <Project>{24259F5C-84DD-348D-BFBF-EEFD0E721CF0}</Project>
+      <Name>crf-train</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\tools\greedy-tagger-test.vcxproj">
+      <Project>{E6448171-9B81-3E8B-92B7-0B558C4FAAEF}</Project>
+      <Name>greedy-tagger-test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\tools\greedy-tagger-train.vcxproj">
+      <Project>{74F85770-0F95-330A-B554-A4C89417C99E}</Project>
+      <Name>greedy-tagger-train</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\hmm\tools\hmm-train.vcxproj">
+      <Project>{3702500C-BB11-3509-A524-FC1DA2478794}</Project>
+      <Name>hmm-train</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\crf\meta-crf.vcxproj">
+      <Project>{EB55AE0D-E426-3B86-9762-ACC38E5583E1}</Project>
+      <Name>meta-crf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\meta-greedy-tagger.vcxproj">
+      <Project>{1AADB125-3E4D-3E45-A489-2C1EA0B36363}</Project>
+      <Name>meta-greedy-tagger</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\hmm\meta-hmm.vcxproj">
+      <Project>{5C6D48F6-F499-3936-8FA6-AEC6903F60B4}</Project>
+      <Name>meta-hmm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\meta-sequence.vcxproj">
+      <Project>{289FF76C-6323-3618-A824-607BA070BCFB}</Project>
+      <Name>meta-sequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\analyzers\meta-sequence-analyzers.vcxproj">
+      <Project>{8ABBDD22-9278-3E77-85E2-C8DCD960452A}</Project>
+      <Name>meta-sequence-analyzers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\crf\tools\pos-tag.vcxproj">
+      <Project>{BFC9C054-D665-3275-91F3-74CF8B414786}</Project>
+      <Name>pos-tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\sequence\crf\tools\pos-tokenizer.vcxproj">
+      <Project>{7A064617-D015-3B54-9A2D-98837688A680}</Project>
+      <Name>pos-tokenizer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

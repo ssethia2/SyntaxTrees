@@ -1,0 +1,121 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/graph/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/graph/tools/CMakeFiles/generate.stamp is up-to-date.
+  graph_test.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(55): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(87): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(95): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(96): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(174): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.tcc(43): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.tcc(36): note: while compiling class template member function 'void meta::graph::undirected_graph<meta::graph::default_node,meta::graph::default_edge>::add_edge(Edge,meta::node_id,meta::node_id)'
+          with
+          [
+              Edge=meta::graph::default_edge
+          ]
+  c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(26): note: see reference to class template instantiation 'meta::graph::undirected_graph<meta::graph::default_node,meta::graph::default_edge>' being compiled
+c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.tcc(58): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.tcc(22): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.tcc(18): note: while compiling class template member function 'const std::vector<std::pair<meta::node_id,Edge>,std::allocator<_Ty>> &meta::graph::undirected_graph<meta::graph::default_node,Edge>::adjacent(meta::node_id) const'
+          with
+          [
+              Edge=meta::graph::default_edge,
+              _Ty=std::pair<meta::node_id,meta::graph::default_edge>
+          ]
+  c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(27): note: see reference to function template instantiation 'const std::vector<std::pair<meta::node_id,Edge>,std::allocator<_Ty>> &meta::graph::undirected_graph<meta::graph::default_node,Edge>::adjacent(meta::node_id) const' being compiled
+          with
+          [
+              Edge=meta::graph::default_edge,
+              _Ty=std::pair<meta::node_id,meta::graph::default_edge>
+          ]
+c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(27): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(23): note: while compiling class template member function 'const meta::graph::default_node &meta::graph::graph<Node,Edge>::node(meta::node_id) const'
+          with
+          [
+              Node=meta::graph::default_node,
+              Edge=meta::graph::default_edge
+          ]
+  c:\msys64\home\satvik\meta\include\meta\graph\undirected_graph.h(34): note: see reference to class template instantiation 'meta::graph::graph<Node,Edge>' being compiled
+          with
+          [
+              Node=meta::graph::default_node,
+              Edge=meta::graph::default_edge
+          ]
+c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(18): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(14): note: while compiling class template member function 'meta::graph::default_node &meta::graph::graph<Node,Edge>::node(meta::node_id)'
+          with
+          [
+              Node=meta::graph::default_node,
+              Edge=meta::graph::default_edge
+          ]
+c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(37): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\graph\graph.tcc(33): note: while compiling class template member function 'meta::util::optional<Edge> meta::graph::graph<Node,Edge>::edge(meta::node_id,meta::node_id) const'
+          with
+          [
+              Edge=meta::graph::default_edge,
+              Node=meta::graph::default_node
+          ]
+  c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(76): note: see reference to function template instantiation 'meta::util::optional<Edge> meta::graph::graph<Node,Edge>::edge(meta::node_id,meta::node_id) const' being compiled
+          with
+          [
+              Edge=meta::graph::default_edge,
+              Node=meta::graph::default_node
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\type_traits(16707566): warning C4244: 'return': conversion from 'uint64_t' to 'double', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(16707566): note: see reference to function template instantiation '_Rx std::_Invoker_ret<_Rx,false>::_Call<_Callable&,_Ty>(_Callable &,_Ty &&)' being compiled
+          with
+          [
+              _Rx=double,
+              _Callable=simulations::<lambda_ea946830c5243116928a345560c834ae>,
+              _Ty=meta::node_id
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(16707566): note: see reference to function template instantiation '_Rx std::_Invoker_ret<_Rx,false>::_Call<_Callable&,_Ty>(_Callable &,_Ty &&)' being compiled
+          with
+          [
+              _Rx=double,
+              _Callable=simulations::<lambda_ea946830c5243116928a345560c834ae>,
+              _Ty=meta::node_id
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(15732480): note: while compiling class template member function 'double std::_Func_impl_no_alloc<simulations::<lambda_ea946830c5243116928a345560c834ae>,_Ret,meta::node_id>::_Do_call(meta::node_id &&)'
+          with
+          [
+              _Ret=double
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(269): note: see reference to class template instantiation 'std::_Func_impl_no_alloc<simulations::<lambda_ea946830c5243116928a345560c834ae>,_Ret,meta::node_id>' being compiled
+          with
+          [
+              _Ret=double
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(527): note: see reference to class template instantiation 'std::_Is_large<_Impl>' being compiled
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(709): note: see reference to function template instantiation 'void std::_Func_class<_Ret,meta::node_id>::_Reset<simulations::<lambda_ea946830c5243116928a345560c834ae>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=double,
+              _Fx=simulations::<lambda_ea946830c5243116928a345560c834ae>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\functional(709): note: see reference to function template instantiation 'void std::_Func_class<_Ret,meta::node_id>::_Reset<simulations::<lambda_ea946830c5243116928a345560c834ae>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=double,
+              _Fx=simulations::<lambda_ea946830c5243116928a345560c834ae>
+          ]
+  c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(158): note: see reference to function template instantiation 'std::function<double (meta::node_id)>::function<simulations::<lambda_ea946830c5243116928a345560c834ae>,void>(_Fx)' being compiled
+          with
+          [
+              _Fx=simulations::<lambda_ea946830c5243116928a345560c834ae>
+          ]
+  c:\msys64\home\satvik\meta\src\graph\tools\graph_test.cpp(154): note: see reference to function template instantiation 'std::function<double (meta::node_id)>::function<simulations::<lambda_ea946830c5243116928a345560c834ae>,void>(_Fx)' being compiled
+          with
+          [
+              _Fx=simulations::<lambda_ea946830c5243116928a345560c834ae>
+          ]
+  graph-test.vcxproj -> C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\Debug\graph-test.exe

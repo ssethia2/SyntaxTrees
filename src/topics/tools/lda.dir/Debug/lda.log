@@ -1,0 +1,53 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/topics/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/topics/tools/CMakeFiles/generate.stamp is up-to-date.
+  lda.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\learn\dataset.h(77): warning C4244: 'initializing': conversion from 'uint64_t' to 'meta::learn::dataset::size_type', possible loss of data
+  c:\msys64\home\satvik\meta\src\topics\tools\lda.cpp(68): note: see reference to function template instantiation 'meta::learn::dataset::dataset<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,meta::printing::default_progress_trait>(std::shared_ptr<meta::index::forward_index>,ForwardIterator,ForwardIterator,ProgressTrait)' being compiled
+          with
+          [
+              _Ty=meta::doc_id,
+              ForwardIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::doc_id>>>,
+              ProgressTrait=meta::printing::default_progress_trait
+          ]
+c:\msys64\home\satvik\meta\include\meta\learn\dataset.h(84): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\io\packed.h(287): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(306): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,int64_t>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=meta::index::postings_stream<meta::term_id,double>::char_input_stream,
+              T=int64_t
+          ]
+  c:\msys64\home\satvik\meta\include\meta\io\packed.h(411): note: see reference to function template instantiation 'unsigned __int64 meta::io::packed::packed_read<InputStream,T>(InputStream &,T &)' being compiled
+          with
+          [
+              InputStream=meta::index::postings_stream<meta::term_id,double>::char_input_stream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(149): note: see reference to function template instantiation 'uint64_t meta::io::packed::read<meta::index::postings_stream<meta::term_id,double>::char_input_stream,_Ty2>(InputStream &,T &)' being compiled
+          with
+          [
+              _Ty2=double,
+              InputStream=meta::index::postings_stream<meta::term_id,double>::char_input_stream,
+              T=double
+          ]
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(136): note: while compiling class template member function 'meta::index::postings_stream<meta::term_id,double>::iterator &meta::index::postings_stream<meta::term_id,double>::iterator::operator ++(void)'
+  c:\msys64\home\satvik\meta\include\meta\index\postings_stream.h(190): note: see reference to function template instantiation 'meta::index::postings_stream<meta::term_id,double>::iterator &meta::index::postings_stream<meta::term_id,double>::iterator::operator ++(void)' being compiled
+  c:\msys64\home\satvik\meta\include\meta\learn\dataset.h(92): note: see reference to class template instantiation 'meta::index::postings_stream<meta::term_id,double>::iterator' being compiled
+  c:\msys64\home\satvik\meta\src\topics\tools\lda.cpp(68): note: see reference to function template instantiation 'meta::learn::dataset::dataset<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,meta::printing::default_progress_trait>(std::shared_ptr<meta::index::forward_index>,ForwardIterator,ForwardIterator,ProgressTrait)' being compiled
+          with
+          [
+              _Ty=meta::doc_id,
+              ForwardIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<meta::doc_id>>>,
+              ProgressTrait=meta::printing::default_progress_trait
+          ]
+LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-corpus.lib'

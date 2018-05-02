@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\alpha_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\empty_sentence_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\english_normalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\filter_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\icu_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\length_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\list_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\lowercase_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\porter2_stemmer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\porter2_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\ptb_normalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\sentence_boundary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\msys64\home\Satvik\meta\src\analyzers\filters\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB4736CD-CD77-36AA-BE73-EE84E7EE7C21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

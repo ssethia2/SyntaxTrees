@@ -1,0 +1,83 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/lm/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/lm/tools/CMakeFiles/generate.stamp is up-to-date.
+  query_lm.cpp
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(284): warning C4307: '*': integral constant overflow
+c:\msys64\home\satvik\meta\include\meta\hashing\hashes\metro_hash.h(161): warning C4244: 'return': conversion from 'uint64_t' to '::size_t', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(343): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(345): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\msys64\home\satvik\meta\include\meta\hashing\perfect_hash_builder.tcc(353): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xutility(2440): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate'
+  c:\msys64\home\satvik\meta\include\meta\hashing\hashes\farm_hash.h(269): note: see reference to function template instantiation '_OutIt std::copy<const uint8_t*,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=const uint8_t *
+          ]
+c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(99): warning C4244: 'argument': conversion from 'uint64_t' to '::size_t', possible loss of data
+  c:\msys64\home\satvik\meta\include\meta\util\disk_vector.tcc(95): note: while compiling class template member function 'meta::util::disk_vector<uint64_t>::~disk_vector(void)'
+  c:\msys64\home\satvik\meta\src\lm\tools\query_lm.cpp(104): note: see reference to function template instantiation 'meta::util::disk_vector<uint64_t>::~disk_vector(void)' being compiled
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xmemory0(1034): note: while compiling class template member function 'std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>::allocate(const ::size_t)'
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(660): note: see reference to function template instantiation 'std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>::allocate(const ::size_t)' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xmemory0(941): note: see reference to class template instantiation 'std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(445): note: see reference to class template instantiation 'std::allocator_traits<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(490): note: see reference to class template instantiation 'std::_List_base_types<_Ty,_Alloc>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(739): note: see reference to class template instantiation 'std::_List_alloc<std::_List_base_types<_Ty,_Alloc>>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\list(790): note: see reference to class template instantiation 'std::_List_buy<_Ty,_Alloc>' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,std::shared_ptr<cpptoml::base>>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\xhash(169): note: see reference to class template instantiation 'std::list<std::pair<const _Kty,_Ty>,std::allocator<std::pair<const _Kty,_Ty>>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::shared_ptr<cpptoml::base>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\unordered_map(96): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::shared_ptr<cpptoml::base>,
+              _Hasher=std::hash<std::string>,
+              _Keyeq=std::equal_to<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::shared_ptr<cpptoml::base>>>
+          ]
+  c:\msys64\home\satvik\meta\deps\cpptoml\include\cpptoml.h(1104): note: see reference to class template instantiation 'std::unordered_map<std::string,std::shared_ptr<cpptoml::base>,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' being compiled
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::shared_ptr<cpptoml::base>
+          ]
+LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-io.lib'

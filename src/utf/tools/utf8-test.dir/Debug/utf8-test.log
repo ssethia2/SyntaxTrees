@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/utf/tools/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/utf/tools/CMakeFiles/generate.stamp is up-to-date.
+  utf8_test.cpp
+LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-utf.lib'

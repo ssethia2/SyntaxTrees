@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{242CE2E2-4EBF-3070-B9BB-820E660055BA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>liblinear</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear/build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear/build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear/build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear/build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No download step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-download.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No download step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-download.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No download step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-download.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No download step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-download.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-update.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-update.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-update.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-update.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-patch.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-patch.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-patch.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-patch.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -CC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp/liblinear-cache-Debug.cmake "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Community" C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-configure.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -CC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp/liblinear-cache-Release.cmake "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Community" C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-configure.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -CC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp/liblinear-cache-MinSizeRel.cmake "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Community" C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-configure.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -CC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/tmp/liblinear-cache-RelWithDebInfo.cmake "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Community" C:/msys64/home/Satvik/meta/src/../deps/libsvm-modules/liblinear
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-configure.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-build.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-build.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-build.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-build.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\f42f04cc19b8b5b75b65a01758bed79b\liblinear-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No install step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-install.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No install step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-install.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No install step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-install.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No install step for 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\msys64\home\Satvik\meta\deps\libsvm-modules\liblinear\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/f42f04cc19b8b5b75b65a01758bed79b/liblinear-install.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\c4295a55bd031435ae9de3008b5f76b6\liblinear-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)/liblinear-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/c4295a55bd031435ae9de3008b5f76b6/liblinear-complete.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)/liblinear-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/c4295a55bd031435ae9de3008b5f76b6/liblinear-complete.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)/liblinear-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/c4295a55bd031435ae9de3008b5f76b6/liblinear-complete.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'liblinear'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/$(Configuration)/liblinear-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/liblinear-prefix/src/liblinear-stamp/$(Configuration)/liblinear-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/c4295a55bd031435ae9de3008b5f76b6/liblinear-complete.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-mkdir;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-download;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-update;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-patch;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-configure;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-build;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\src\liblinear-stamp\$(Configuration)\liblinear-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\CMakeFiles\2ee577bdd3189ec43de504932138ba61\liblinear.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/2ee577bdd3189ec43de504932138ba61/liblinear.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\liblinear</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/2ee577bdd3189ec43de504932138ba61/liblinear.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\liblinear</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/2ee577bdd3189ec43de504932138ba61/liblinear.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\liblinear</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/CMakeFiles/2ee577bdd3189ec43de504932138ba61/liblinear.rule;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\$(Configuration)\liblinear-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\liblinear</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt.in;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\libsvm-prefix\tmp\libsvm-cfgcmd.txt.in;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt.in;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\libsvm-prefix\tmp\libsvm-cfgcmd.txt.in;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt.in;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\libsvm-prefix\tmp\libsvm-cfgcmd.txt.in;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/msys64/home/Satvik/meta -BC:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2 --check-stamp-file C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/classify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/msys64/home/Satvik/meta/src/classify/CMakeLists.txt;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\liblinear-prefix\tmp\liblinear-cfgcmd.txt.in;C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\libsvm-prefix\tmp\libsvm-cfgcmd.txt.in;C:\msys64\home\Satvik\meta\src\classify\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\src\classify\CMakeFiles\liblinear" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Satvik\of_v0.9.8_vs_release\apps\myApps\final-project-ssethia2\ZERO_CHECK.vcxproj">
+      <Project>{C290A582-B682-31C5-83CA-596347701D17}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
