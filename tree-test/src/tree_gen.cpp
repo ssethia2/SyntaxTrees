@@ -137,7 +137,7 @@ namespace BinaryTree {
 		//Go until the next VP or till the end of the sentence
 		while (sec_iter < phrases.size() && phrases.at(sec_iter)->label != "VP") {
 			//If these phrases are PPs or AdjPs and this NP has at least one adjunct
-			if (phrases.at(sec_iter)->label == "PP" || phrases.at(sec_iter)->label == "AdjP") {
+			if ((sec_iter > prime_iter && phrases.at(sec_iter)->label == "PP") || phrases.at(sec_iter)->label == "AdjP") {
 				//Create a new bar level
 				Node *new_bar;
 

@@ -114,4 +114,46 @@ namespace BinaryTree {
 		REQUIRE(test_phrases.at(2)->left->left->left->label == "AdjP");
 		REQUIRE(test_phrases.at(2)->left->right->label == "PP");
 	}
+
+	TEST_CASE("NPhrase with multiple preceding adjuncts test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "Adj", "Adj", "N", "V"};
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.NPhrase(test_phrases, 3, 3);
+		REQUIRE(test_phrases.at(3)->label == "NP");
+		REQUIRE(test_phrases.at(3)->left->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->left->label == "AdjP");
+		REQUIRE(test_phrases.at(3)->left->right->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->right->left->label == "AdjP");
+		REQUIRE(test_phrases.at(3)->left->right->right->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->right->right->left->label == "N");
+	}
+
+	TEST_CASE("NPhrase with multiple preceding and following adjuncts test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "Adj", "Adj", "N", "P", "P", "V" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.NPhrase(test_phrases, 3, 3);
+		REQUIRE(test_phrases.at(3)->label == "NP");
+		REQUIRE(test_phrases.at(3)->left->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->right->label == "PP");
+		REQUIRE(test_phrases.at(3)->left->left->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->left->right->label == "PP");
+		REQUIRE(test_phrases.at(3)->left->left->left->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->left->left->left->label == "AdjP");
+		REQUIRE(test_phrases.at(3)->left->left->left->right->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->left->left->right->left->label == "AdjP");
+		REQUIRE(test_phrases.at(3)->left->left->left->right->right->label == "N'");
+		REQUIRE(test_phrases.at(3)->left->left->left->right->right->left->label == "N");
+	}
 }
