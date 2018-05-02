@@ -21,12 +21,6 @@ namespace BinaryTree {
 		REQUIRE(test_phrase->right == nullptr);
 	}
 
-	/*TEST_CASE("Vector constructor") {
-		vector<string> n = {"D", "N"};
-		BinaryTree one_phrase = BinaryTree::BinaryTree(n);
-		REQUIRE(one_phrase.root_->label == "DP");
-	}*/
-
 	TEST_CASE("DPhrase with immediately following NP test") {
 		BinaryTree empty = BinaryTree::BinaryTree();
 		vector<Node*> test_phrases = {};
@@ -290,5 +284,61 @@ namespace BinaryTree {
 		REQUIRE(test_phrases.at(4)->left->right->right->label == "Adj'");
 		REQUIRE(test_phrases.at(4)->left->right->right->left->label == "AdvP");
 		REQUIRE(test_phrases.at(4)->left->right->right->right->label == "Adj");
+	}
+
+	TEST_CASE("CPhrase with only subject test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.CPhrase(test_phrases);
+		REQUIRE(empty.root_->label == "S");
+		REQUIRE(empty.root_->left->label == "DP");
+	}
+
+	TEST_CASE("CPhrase with only predicate test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "V", "Adv" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.CPhrase(test_phrases);
+		REQUIRE(empty.root_->label == "S");
+		REQUIRE(empty.root_->right->label == "VP");
+	}
+
+	TEST_CASE("CPhrase with both subject and predicate test") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D", "N", "Adv" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.BuildTree(test_phrases);
+		REQUIRE(empty.root_->label == "S");
+		REQUIRE(empty.root_->left->label == "DP");
+		REQUIRE(empty.root_->right->label == "VP");
+		REQUIRE(empty.root_->left->left->right->label == "NP");
+		REQUIRE(empty.root_->right->left->right->label == "AdvP");
+	}
+
+	TEST_CASE("Vector constructor") {
+	vector<string> tags = {"D", "N", "V", "D", "N"};
+	BinaryTree one_phrase = BinaryTree::BinaryTree(tags);
+
+	REQUIRE(one_phrase.root_->label == "S");
+	REQUIRE(one_phrase.root_->left->label == "DP");
+	REQUIRE(one_phrase.root_->left->left->right->label == "NP");
+	REQUIRE(one_phrase.root_->right->label == "VP");
+	REQUIRE(one_phrase.root_->right->left->right->label == "DP");
 	}
 }

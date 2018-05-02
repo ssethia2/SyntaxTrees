@@ -244,8 +244,10 @@ namespace BinaryTree {
 	* @param phrases vector that contains the subject DP and VP
 	*/
 	void BinaryTree::CPhrase(vector<Node*>& phrases) {
-		if (phrases.at(0)->left->label == "DP") {
-			root_ = new Node("S", phrases.at(0)); //Put the subject in the left subtree if there is one
+		root_ = new Node("S");
+
+		if (phrases.at(0)->label == "DP") {
+			root_->left = phrases.at(0); //Put the subject in the left subtree if there is one
 		}
 
 		for (auto phrase : phrases) {
