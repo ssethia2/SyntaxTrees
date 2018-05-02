@@ -175,6 +175,27 @@ namespace BinaryTree {
 		REQUIRE(test_phrases.at(2)->left->left->left->label == "V");
 	}
 
+	TEST_CASE("VPhrase with one following D multiple Adv adjuncts") {
+		BinaryTree empty = BinaryTree::BinaryTree();
+		vector<string> tags = { "D", "N", "V", "D", "Adv", "Adv" };
+		vector<Node*> test_phrases = {};
+
+		for (auto tag : tags) {
+			test_phrases.push_back(empty.CreatePhrase(tag));
+		}
+
+		empty.VPhrase(test_phrases, 2, 2);
+		REQUIRE(test_phrases.at(2)->label == "VP");
+		REQUIRE(test_phrases.at(2)->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->right->label == "AdvP");
+		REQUIRE(test_phrases.at(2)->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->right->label == "AdvP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->label == "V'");
+		REQUIRE(test_phrases.at(2)->left->left->left->right->label == "DP");
+		REQUIRE(test_phrases.at(2)->left->left->left->left->left->label == "V");
+	}
+
 	TEST_CASE("VPhrase with multiple following adjuncts") {
 		BinaryTree empty = BinaryTree::BinaryTree();
 		vector<string> tags = { "D", "N", "V", "D", "N", "P" };
