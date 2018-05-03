@@ -4,20 +4,19 @@ I will be making an application that generates *syntax trees* of sentences based
 
 ### The Project
 
-I will be using a library to categorize the *Parts-Of-Speech* of a sentence entered by the user. Then I will apply the **X-Bar theory** to form the different phrases:
+I will apply the **X-Bar theory** to parts of speech entered by the user to form the different phrases:
 
 * noun phrases
 * verb phrases 
 * preposition phrases
 * adjective phrases
 * adverb phrases
-* tense phrases
 
 Then I will build on these phrases to build more phrases and eventually envelop the whole sentence in a complementizer phrase. From this, I will display a *syntax tree* for the sentence in a new window, using openFrameworks. 
 
 ### Libraries
 
-A library that categorizes words as *Parts-Of-Speech* - still exploring libraries. 
+I will use ofxGUI to display the binary tree on the openFrameworks window. 
 
 ### Background
 
