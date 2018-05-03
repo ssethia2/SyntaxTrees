@@ -23,7 +23,7 @@ Other platforms *may* or *may not* be suited to run the application or unit test
 
 Author(s):
 
-+ Satvik Sethia
++ **Satvik Sethia**
 
 Acknowledgements:
 
