@@ -24,3 +24,11 @@
 + MeTA working on system. 
 + MeTA project generated on MSVC 2017, 51 build errors. 
 + Need to figure way to integrate it with project.
++ Freeling built, can't use API.
++ Finished unit testing with all (109) assertions passed.
++ All attempts to use POS-tagging library failed.
++ Linked openFrameworks class to tree_gen.
++ Drawing tree as is with labels, instead of full and complete.
++ Fixed height and width offsets.
++ Drawing circles around node labels.
++ Drawing lines connecting nodes.
