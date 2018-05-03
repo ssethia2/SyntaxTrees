@@ -24,3 +24,14 @@ Other platforms *may* or *may not* be suited to run the application or unit test
 Author(s):
 
 + Satvik Sethia
+
+Acknowledgements:
+
++ Professor Graham Carl Evans
++ Arnav Sankaran
++ Dachun Sun
++ Dillon Hammond
++ Nicholas Nytko
++ Will Koster
++ Yash Sharma
++ Ethan Chang
