@@ -7,8 +7,7 @@ using std::string;
 
 enum ProjectState {
 	TAKE_INPUT,
-	DRAW_TREE,
-	RESET
+	DRAW_TREE
 };
 
 class ofApp : public ofBaseApp {
@@ -24,7 +23,7 @@ public:
 	void setup();
 	void update();
 	void draw();
-	void drawTree(BinaryTree::Node *root, int i, int j, int count, int offset);
+	void drawTree(BinaryTree::Node *root, int i, int j, int count);
 
 	void keyPressed(int key);
 

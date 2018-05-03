@@ -1,5 +1,0 @@
-﻿  Building Custom Rule C:/msys64/home/Satvik/meta/src/topics/tools/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/Satvik/of_v0.9.8_vs_release/apps/myApps/final-project-ssethia2/src/topics/tools/CMakeFiles/generate.stamp is up-to-date.
-  topic_corpus.cpp
-c:\msys64\home\satvik\meta\src\topics\tools\topic_corpus.cpp(95): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-LINK : fatal error LNK1104: cannot open file '..\..\..\lib\Debug\meta-corpus.lib'

@@ -10,7 +10,7 @@ using std::vector;
 void ofApp::setup() {
 	syntax_ = "";
 	ofSetFullscreen(true);
-	ofBackground(0);
+	ofBackground(50);
 	prompt_font_.load("itcblkad.ttf", 28);
 	user_font_.load("itcblkad.ttf", 22);
 }
@@ -58,23 +58,29 @@ void ofApp::draw() {
 			}
 		}*/
 
-		drawTree(syntax_tree.root_, 0, 1, x, 0);
+		drawTree(syntax_tree.root_, 0, -4, x);
 
 		prompt_font_.drawString("Press R to reset, Esc to exit", ofGetWidth() / 3, ofGetHeight() / 1.2);
 	}
 }
 
-void ofApp::drawTree(BinaryTree::Node *root, int i, int j, int count, int offset) {
-	//ofDrawBitmapString(root->label, (count + 1 - j) * ofGetWidth() / (pow(2.0, i + 1) + 2.0), (i + 1)*ofGetHeight() / pow(1.5, count));
-	ofDrawBitmapString(root->label, (ofGetWidth() / 2.0) + j*20, ofGetHeight()/4 + i*50);
+void ofApp::drawTree(BinaryTree::Node *root, int i, int j, int count) {
+	double width = (ofGetWidth() / 2.0) + j * 35;
+	double height = ofGetHeight() / 4 + i * 50;
+	ofDrawCircle(width + 7, height - 5, 17);
+	ofDrawBitmapStringHighlight(root->label, width, height, ofColor::white, ofColor::black);
 
 	if (root->left && !(root->right)) {
-		drawTree(root->left, i + 1, j - (count - i) - 1, count, offset--);
+		i++;
+		ofDrawLine(width + 7, height, width + 7, ofGetHeight() / 4 + i * 50);
+		drawTree(root->left, i, j, count);
 	} else if (root->left) {
-		drawTree(root->left, i + 1, j - (count - i) - 1, count, offset--);
+		ofDrawLine(width + 7, height, (ofGetWidth() / 2.0) + ((j - (count - i) - 1) * 35) + 7, ofGetHeight() / 4 + (i + 1) * 50);
+		drawTree(root->left, i + 1, j - (count - i) - 1, count);
 	}
 	if (root->right) {
-		drawTree(root->right, i + 1, j + (count - i) + 1, count, offset--);
+		ofDrawLine(width + 7, height, (ofGetWidth() / 2.0) + ((j + (count - i) + 1) * 35) + 7, ofGetHeight() / 4 + (i + 1) * 50);
+		drawTree(root->right, i + 1, j + (count - i) + 1, count);
 	}
 }
 
