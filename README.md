@@ -31,7 +31,7 @@ Acknowledgements:
 + Arnav Sankaran
 + Dachun Sun
 + Dillon Hammond
-+ Nicholas Nytko
++ Nicolas Nytko
 + Will Koster
 + Yash Sharma
-+ Ethan Chang
++ Ethan Cheng
