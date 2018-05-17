@@ -21,8 +21,8 @@ Acceptable tags with a space in between are:
 + V - Verb
 + P - Preposition
 
-Example of use:
-Sentence - The man kicked the ball
+Example of use:\
+Sentence - The man kicked the ball\
 Tags -      D   N    V     D    N
 
 -------
