@@ -1,6 +1,6 @@
 # CS 126 FinalProject - Syntax Trees
 
-This project uses [**openFrameWorks**](http://openframeworks.cc/) to accept parts of speech of English, and constructs the Syntax Trees based on [**X-Bar Theory**](https://en.wikipedia.org/wiki/X-bar_theory).
+This application accepts parts-of-speech tags of English, and constructs the Syntax Trees based on [**X-Bar Theory**](https://en.wikipedia.org/wiki/X-bar_theory). It uses [**openFrameWorks**](http://openframeworks.cc/) v9.8 to draw the visualization of the trees.
 
 The project is written in C++ in Visual Studio 15 (2017 Community) edition.
 
@@ -12,7 +12,7 @@ To use this project or extend it:
 + Run the Local Windows Debugger
 
 Once the openFrameworks window opens, type in the parts-of-speech tags of a sentence under the prompt to construct its tree.
-Acceptable tags with a space in between:
+Acceptable tags with a space in between are:
 
 + D - Determiner
 + N - Noun
@@ -21,6 +21,11 @@ Acceptable tags with a space in between:
 + V - Verb
 + P - Preposition
 
+Example of use:
+Sentence - The man kicked the ball
+Tags -      D   N    V     D    N
+
+-------
 
 Unit tests were written for testing proper tree construction using [*Catch*](https://github.com/catchorg/Catch2) and compiled using [*CMake*](https://cmake.org/). A CMakeLists.txt file is provided for unit tests. 
 
