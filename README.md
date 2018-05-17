@@ -4,6 +4,8 @@ This application accepts parts-of-speech tags of English, and constructs the Syn
 
 The project is written in C++ in Visual Studio 15 (2017 Community) edition.
 
+-------
+
 To use this project or extend it: 
 
 + Clone or download the git repository
@@ -36,6 +38,8 @@ To run the unit tests:
 + Build only the test.exe executable using the CMake tab in Visual Studio
 
 Other platforms *may* or *may not* be suited to run the application or unit tests.
+
+-------
 
 Author(s):
 
