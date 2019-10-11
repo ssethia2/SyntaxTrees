@@ -18,13 +18,13 @@ namespace BinaryTree {
 		Node *left;		//Pointer to left child (root of left subtree)
 		Node *right;	//Pointer to right child (root of right subtree)
 
-						/**
-						* Parametrized constructor for Node with default values for unspecified parameters.
-						*
-						* @param lab label of the node. NULL (0) by default.
-						* @param new_left pointer to left child. 'nullptr' by default.
-						* @param new_right pointer to right child. 'nullptr' by default.
-						*/
+		/**
+		* Parametrized constructor for Node with default values for unspecified parameters.
+		*
+		* @param lab label of the node. NULL (0) by default.
+		* @param new_left pointer to left child. 'nullptr' by default.
+		* @param new_right pointer to right child. 'nullptr' by default.
+		*/
 		Node(string lab = NULL, Node *new_left = nullptr, Node *new_right = nullptr) {
 			label = lab;
 			left = new_left;
@@ -63,7 +63,7 @@ namespace BinaryTree {
 		void DPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);		//Build DP subtree
 		void NPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);		//Build NP subtree
 		void VPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);		//Build VP subtree
-		void PPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);		//Build PP subtree 
+		void PPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);		//Build PP subtree
 		void AdjPhrase(vector<Node*> &phrases, int prime_iter, int sec_iter);	//Build AdjP subtree
 		void CPhrase(vector<Node*> &phrases);									//Build CP subtree
 
